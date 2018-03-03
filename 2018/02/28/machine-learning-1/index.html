@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Of Course I Still Love You">
 <meta property="og:description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Andrew Ng’s Lecture">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-03T03:53:52.230Z">
+<meta property="og:updated_time" content="2018-03-03T07:13:49.058Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习笔记 (1)">
 <meta name="twitter:description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Andrew Ng’s Lecture">
@@ -372,7 +372,7 @@
 <h2 id="elementary-concepts"><a class="markdownIt-Anchor" href="#elementary-concepts"></a> Elementary concepts</h2>
 <h3 id="what-is-machine-learning"><a class="markdownIt-Anchor" href="#what-is-machine-learning"></a> What is machine learning?</h3>
 <p>Machine Learning is a scientific discipline that explores the construction and study of algorithms that can learn from data. Machine learning enables analysis of massive quantities of data. We all know “<strong>Machine</strong>”, computers or computer programs. Then what is “<strong>Learning</strong>”? <a id="more"></a> Learning denotes “Changes in the system that are adaptive in the sense that they enable the system to do same task or tasks drawn from the same population more efficiently and more effectively the next time” <a href="http://ktubtechquestions.com/2015/06/27/cusat-b-tech-question-paper/" target="_blank" rel="noopener">[1]</a>. As a pioneer in the field of artificial intelligence, <em>Herbert A. Simon</em> created with Allen Newell the Logic Theory Machine (1956), and the General Problem Solver (GPS) (1957) programs, which was thought as the first method developed for separating problem solving strategy from information about particular problems.</p>
-<p><em>Arthur Samuel</em> created the world’s first successful self-learning programs, namely the Samuel Checkers-playing. He coined the term “Machine Learning” in 1959, defined as “the field of study that gives computers the alility to learn without being explicitly programmed”.</p>
+<p><em>Arthur Samuel</em> created the world’s first successful self-learning programs, the Samuel Checkers-playing. He coined the term “Machine Learning” in 1959, which was defined as “the field of study that gives computers the alility to learn without being explicitly programmed”.</p>
 <p><em>Tom Mitchell</em> (former Chair of the Machine Learning Department at CMU) gave a modern definition: “A computer program is said to learn from experience <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span> with respect to some class of tasks T and performance measure <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span></span></span></span>, if its performance at tasks in <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span>, as measured by <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span></span></span></span>, improves with experience <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span>.” Example: playing checkers.</p>
 <ul>
 <li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span> = the experience of playing many games of checkers.</li>
@@ -391,6 +391,7 @@
 <li>Human Genetics</li>
 <li>Decoding thoughts from brain scans</li>
 <li>Medical data analysis</li>
+<li>Finance</li>
 <li>Robotics</li>
 <li>Natural language processing, speech recognition</li>
 <li>Computer vision</li>
@@ -398,11 +399,98 @@
 <li>Computational biology</li>
 <li>Sensor networks (new multi-modal sensing devices)</li>
 <li>Social networks</li>
+<li>Turbulence problem</li>
 </ul>
 <h2 id="three-components-of-a-machine-learning-algorithm"><a class="markdownIt-Anchor" href="#three-components-of-a-machine-learning-algorithm"></a> Three components of a machine learning algorithm</h2>
+<p>Pedro Domingos, a CS professor at the University of Washington, decomposed machine learning into three components: Representation, Evaluation, and Optimization <a href="https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf" target="_blank" rel="noopener">[2]</a>.</p>
+<p>Table 1. The three components of learning algorithms</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Represnetation</th>
+<th style="text-align:left">Evaluation</th>
+<th style="text-align:left">Optimization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Instances</td>
+<td style="text-align:left">Accuracy/Error rate</td>
+<td style="text-align:left">Combinatorial optimization</td>
+</tr>
+<tr>
+<td style="text-align:left">^K-nearest neighbor</td>
+<td style="text-align:left">Precision and recall</td>
+<td style="text-align:left">^Greedy search</td>
+</tr>
+<tr>
+<td style="text-align:left">^Support vector machines</td>
+<td style="text-align:left">Squared error</td>
+<td style="text-align:left">^Beam search</td>
+</tr>
+<tr>
+<td style="text-align:left">Hyperplanes</td>
+<td style="text-align:left">Likelihood</td>
+<td style="text-align:left">^Branch-and-bound</td>
+</tr>
+<tr>
+<td style="text-align:left">^Naive Bayes</td>
+<td style="text-align:left">Posterior probability</td>
+<td style="text-align:left">Continuous optimization</td>
+</tr>
+<tr>
+<td style="text-align:left">^Logistic regression</td>
+<td style="text-align:left">Information gain</td>
+<td style="text-align:left">^Unconstrained (Convex)</td>
+</tr>
+<tr>
+<td style="text-align:left">Decision trees</td>
+<td style="text-align:left">K-L divergence</td>
+<td style="text-align:left">^^Gradient descent</td>
+</tr>
+<tr>
+<td style="text-align:left">Sets of rules</td>
+<td style="text-align:left">Cost/Utility</td>
+<td style="text-align:left">^^Conjugate gradient</td>
+</tr>
+<tr>
+<td style="text-align:left">^Propositional rules</td>
+<td style="text-align:left">Margin</td>
+<td style="text-align:left">^^Quasi-Newton methods</td>
+</tr>
+<tr>
+<td style="text-align:left">^Logic programs</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">^Constrained</td>
+</tr>
+<tr>
+<td style="text-align:left">Neural networks</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">^^Linear programming</td>
+</tr>
+<tr>
+<td style="text-align:left">Graphical models</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">^^Quadratic programming</td>
+</tr>
+<tr>
+<td style="text-align:left">^Bayesian networks</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">^Conditional random fields</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <h3 id="representation"><a class="markdownIt-Anchor" href="#representation"></a> Representation</h3>
+<p>A classifier must be represented in some formal language that the computer can handle. A learner  takes observations as inputs. The <strong>observation language</strong> is the language used to describe these observations. The hypotheses that a learner may produce, will be formulated in a language that is  called the <strong>hypothesis language</strong>. The <strong>hypothesis space</strong> is the set of hypotheses that can be described using this hypothesis language <a href="https://lirias.kuleuven.be/bitstream/123456789/298291/1/hyp-space.pdf" target="_blank" rel="noopener">[3]</a>. The problem is how to represent the input, i.e. what features to use. For example, 3-layer feedforward neural networks (or computational graphs) form one type of representation, while support vector machines with RBF kernels form another.</p>
 <h3 id="evaluation"><a class="markdownIt-Anchor" href="#evaluation"></a> Evaluation</h3>
+<p>Evaluation is essentially how you judge or prefer candidate programs (hypotheses). An evaluation function (also called objective function, utility function, loss function, fitness function or scoring function) is needed. Mean squared error (of a model’s output vs. the data output) or likelihood (the estimated probability of a model given the observed data) are examples of different evaluation functions.</p>
 <h3 id="optimization"><a class="markdownIt-Anchor" href="#optimization"></a> Optimization</h3>
+<p>Finally, a method is needed to search among the candidate programs (in the space of represented models) for the highest-scoring one as the optimum. Stochastic gradient descent and genetic algorithms are two different ways of optimizing a model class.</p>
 <h2 id="machine-learning-tasks"><a class="markdownIt-Anchor" href="#machine-learning-tasks"></a> Machine Learning Tasks</h2>
 
       
