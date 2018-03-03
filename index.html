@@ -364,46 +364,18 @@
 
       
         
-          
-            <h2 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h2>
+          <h2 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h2>
 <p>Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Andrew Ng’s Lecture Notes <a href="http://cs229.stanford.edu/" target="_blank" rel="noopener">CS229 of Standford</a>, Machine Learning course of SJTU <a href="http://bcmi.sjtu.edu.cn/%7Eyangyang/ml/#" target="_blank" rel="noopener">IEEE-yangyang</a>, and <a href="https://developers.google.com/machine-learning/crash-course/" target="_blank" rel="noopener">Machine Learning Crash Course</a> of Google.</p>
 <h2 id="elementary-concepts"><a class="markdownIt-Anchor" href="#elementary-concepts"></a> Elementary concepts</h2>
 <h3 id="what-is-machine-learning"><a class="markdownIt-Anchor" href="#what-is-machine-learning"></a> What is machine learning?</h3>
-<p>Machine Learning is a scientific discipline that explores the construction and study of algorithms that can learn from data. Machine learning enables analysis of massive quantities of data. We all know “<strong>Machine</strong>”, computers or computer programs. Then what is “<strong>Learning</strong>”? Learning denotes “Changes in the system that are adaptive in the sense that they enable the system to do same task or tasks drawn from the same population more efficiently and more effectively the next time” <a href="http://ktubtechquestions.com/2015/06/27/cusat-b-tech-question-paper/" target="_blank" rel="noopener">[1]</a>. As a pioneer in the field of artificial intelligence, <em>Herbert A. Simon</em> creating with Allen Newell the Logic Theory Machine (1956), and the General Problem Solver (GPS) (1957) programs, which is thought as the first method developed for separating problem solving strategy from information about particular problems.</p>
-<p><em>Arthur Samuel</em> created the world’s first successful self-learning programs, namely the Samuel Checkers-playing. He coined the term “Machine Learning” in 1959, defined as “the field of study that gives computers the alility to learn without being explicitly programmed”.</p>
-<p><em>Tom Mitchell</em> (former Chair of the Machine Learning Department at CMU) gave a modern definition: “A computer program is said to learn from experience <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span> with respect to some class of tasks T and performance measure <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span></span></span></span>, if its performance at tasks in <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span>, as measured by <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span></span></span></span>, improves with experience <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span>.” Example: playing checkers.</p>
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span> = the experience of playing many games of checkers.</li>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span> = the task of playing checkers.s</li>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span></span></span></span> = the probability that the program will win the next game.</li>
-</ul>
-<h3 id="what-can-machine-learning-do"><a class="markdownIt-Anchor" href="#what-can-machine-learning-do"></a> What can machine learning do？</h3>
-<p>ML can be used to deal with Big Data deluge and predicitve analytics, e.g.</p>
-<ul>
-<li>Document Classification</li>
-<li>Spam Filtering</li>
-<li>Weather Prediction</li>
-<li>Stock Market Prediction</li>
-<li>Collaborative Filtering</li>
-<li>Clustering Images</li>
-<li>Human Genetics</li>
-<li>Decoding thoughts from brain scans</li>
-<li>Medical data analysis</li>
-<li>Robotics</li>
-<li>Natural language processing, speech recognition</li>
-<li>Computer vision</li>
-<li>Web forensics</li>
-<li>Computational biology</li>
-<li>Sensor networks (new multi-modal sensing devices)</li>
-<li>Social networks</li>
-</ul>
-<h2 id="three-components-of-a-machine-learning-algorithm"><a class="markdownIt-Anchor" href="#three-components-of-a-machine-learning-algorithm"></a> Three components of a machine learning algorithm</h2>
-<h3 id="representation"><a class="markdownIt-Anchor" href="#representation"></a> Representation</h3>
-<h3 id="evaluation"><a class="markdownIt-Anchor" href="#evaluation"></a> Evaluation</h3>
-<h3 id="optimization"><a class="markdownIt-Anchor" href="#optimization"></a> Optimization</h3>
-<h2 id="machine-learning-tasks"><a class="markdownIt-Anchor" href="#machine-learning-tasks"></a> Machine Learning Tasks</h2>
-
-          
+<p>Machine Learning is a scientific discipline that explores the construction and study of algorithms that can learn from data. Machine learning enables analysis of massive quantities of data. We all know “<strong>Machine</strong>”, computers or computer programs. Then what is “<strong>Learning</strong>”?
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2018/02/28/machine-learning-1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
