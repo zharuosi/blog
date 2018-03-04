@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zharuosi.github.io/blog/about/index.html</loc>
+    
+    <lastmod>2018-03-04T03:59:46.207Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zharuosi.github.io/blog/2018/02/28/machine-learning-1/</loc>
     
     <lastmod>2018-03-04T03:41:26.238Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://zharuosi.github.io/blog/2018/02/07/ssh-login/</loc>
     
     <lastmod>2018-02-25T00:14:47.663Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/about/index.html</loc>
-    
-    <lastmod>2018-02-12T23:53:54.507Z</lastmod>
     
   </url>
   
