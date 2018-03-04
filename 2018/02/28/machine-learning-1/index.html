@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Andrew Ng’s Lecture">
+<meta name="description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew N">
 <meta name="keywords" content="Machine Learning,Artificial Intelligence">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器学习笔记 (1)">
 <meta property="og:url" content="https://zharuosi.github.io/blog/2018/02/28/machine-learning-1/index.html">
 <meta property="og:site_name" content="Of Course I Still Love You">
-<meta property="og:description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Andrew Ng’s Lecture">
+<meta property="og:description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew N">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-03T07:13:49.058Z">
+<meta property="og:updated_time" content="2018-03-04T01:10:33.707Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习笔记 (1)">
-<meta name="twitter:description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Andrew Ng’s Lecture">
+<meta name="twitter:description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew N">
 
 
 
@@ -368,15 +368,16 @@
 
       
         <h2 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h2>
-<p>Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Andrew Ng’s Lecture Notes <a href="http://cs229.stanford.edu/" target="_blank" rel="noopener">CS229 of Standford</a>, Machine Learning course of SJTU <a href="http://bcmi.sjtu.edu.cn/%7Eyangyang/ml/#" target="_blank" rel="noopener">IEEE-yangyang</a>, and <a href="https://developers.google.com/machine-learning/crash-course/" target="_blank" rel="noopener">Machine Learning Crash Course</a> of Google.</p>
+<p>Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew Ng’s Lecture Notes <a href="http://cs229.stanford.edu/" target="_blank" rel="noopener">CS229 of Standford</a>, Machine Learning course of SJTU <a href="http://bcmi.sjtu.edu.cn/%7Eyangyang/ml/#" target="_blank" rel="noopener">IEEE-yangyang</a>, and <a href="https://developers.google.com/machine-learning/crash-course/" target="_blank" rel="noopener">Machine Learning Crash Course</a> of Google.</p>
 <h2 id="elementary-concepts"><a class="markdownIt-Anchor" href="#elementary-concepts"></a> Elementary concepts</h2>
 <h3 id="what-is-machine-learning"><a class="markdownIt-Anchor" href="#what-is-machine-learning"></a> What is machine learning?</h3>
-<p>Machine Learning is a scientific discipline that explores the construction and study of algorithms that can learn from data. Machine learning enables analysis of massive quantities of data. We all know “<strong>Machine</strong>”, computers or computer programs. Then what is “<strong>Learning</strong>”? <a id="more"></a> Learning denotes “Changes in the system that are adaptive in the sense that they enable the system to do same task or tasks drawn from the same population more efficiently and more effectively the next time” <a href="http://ktubtechquestions.com/2015/06/27/cusat-b-tech-question-paper/" target="_blank" rel="noopener">[1]</a>. As a pioneer in the field of artificial intelligence, <em>Herbert A. Simon</em> created with Allen Newell the Logic Theory Machine (1956), and the General Problem Solver (GPS) (1957) programs, which was thought as the first method developed for separating problem solving strategy from information about particular problems.</p>
+<p>Machine Learning is a scientific discipline that explores the construction and study of algorithms that can learn from data. Machine learning enables analysis of massive quantities of data. We all know “<strong>Machine</strong>”, i.e. computers or computer programs. Do you know what is “<strong>Learning</strong>”? <a id="more"></a> Learning denotes “Changes in the system that are adaptive in the sense that they enable the system to do same task or tasks drawn from the same population more efficiently and more effectively the next time” <a href="http://ktubtechquestions.com/2015/06/27/cusat-b-tech-question-paper/" target="_blank" rel="noopener">[1]</a>. As a pioneer in the field of artificial intelligence, <em>Herbert A. Simon</em> created with Allen Newell the Logic Theory Machine (1956), and the General Problem Solver (GPS) (1957) programs, which was thought as the first method developed for separating problem solving strategy from information about particular problems.</p>
 <p><em>Arthur Samuel</em> created the world’s first successful self-learning programs, the Samuel Checkers-playing. He coined the term “Machine Learning” in 1959, which was defined as “the field of study that gives computers the alility to learn without being explicitly programmed”.</p>
-<p><em>Tom Mitchell</em> (former Chair of the Machine Learning Department at CMU) gave a modern definition: “A computer program is said to learn from experience <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span> with respect to some class of tasks T and performance measure <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span></span></span></span>, if its performance at tasks in <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span>, as measured by <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span></span></span></span>, improves with experience <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span>.” Example: playing checkers.</p>
+<p><em>Tom Mitchell</em> (former Chair of the Machine Learning Department at CMU) gave a modern definition: “A computer program is said to learn from experience <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span> with respect to some class of tasks T and performance measure <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span></span></span></span>, if its performance at tasks in <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span>, as measured by <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span></span></span></span>, improves with experience <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span>.”</p>
+<p>An example: playing checkers.</p>
 <ul>
 <li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span> = the experience of playing many games of checkers.</li>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span> = the task of playing checkers.s</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span> = the task of playing checkers.</li>
 <li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span></span></span></span> = the probability that the program will win the next game.</li>
 </ul>
 <h3 id="what-can-machine-learning-do"><a class="markdownIt-Anchor" href="#what-can-machine-learning-do"></a> What can machine learning do？</h3>
@@ -414,7 +415,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">Instances</td>
+<td style="text-align:left"><a href="https://en.wikipedia.org/wiki/Instance-based_learning" target="_blank" rel="noopener">Instances</a></td>
 <td style="text-align:left">Accuracy/Error rate</td>
 <td style="text-align:left">Combinatorial optimization</td>
 </tr>
@@ -429,7 +430,7 @@
 <td style="text-align:left">^Beam search</td>
 </tr>
 <tr>
-<td style="text-align:left">Hyperplanes</td>
+<td style="text-align:left"><a href="https://www.svm-tutorial.com/2015/06/svm-understanding-math-part-3/" target="_blank" rel="noopener">Hyperplanes</a></td>
 <td style="text-align:left">Likelihood</td>
 <td style="text-align:left">^Branch-and-bound</td>
 </tr>
@@ -444,12 +445,12 @@
 <td style="text-align:left">^Unconstrained (Convex)</td>
 </tr>
 <tr>
-<td style="text-align:left">Decision trees</td>
+<td style="text-align:left"><a href="https://en.wikipedia.org/wiki/Decision_tree_learning" target="_blank" rel="noopener">Decision trees</a></td>
 <td style="text-align:left">K-L divergence</td>
 <td style="text-align:left">^^Gradient descent</td>
 </tr>
 <tr>
-<td style="text-align:left">Sets of rules</td>
+<td style="text-align:left"><a href="https://en.wikipedia.org/wiki/Rule-based_machine_learning" target="_blank" rel="noopener">Sets of rules</a></td>
 <td style="text-align:left">Cost/Utility</td>
 <td style="text-align:left">^^Conjugate gradient</td>
 </tr>
@@ -464,12 +465,12 @@
 <td style="text-align:left">^Constrained</td>
 </tr>
 <tr>
-<td style="text-align:left">Neural networks</td>
+<td style="text-align:left"><a href="https://en.wikipedia.org/wiki/Artificial_neural_network" target="_blank" rel="noopener">Neural networks</a></td>
 <td style="text-align:left"></td>
 <td style="text-align:left">^^Linear programming</td>
 </tr>
 <tr>
-<td style="text-align:left">Graphical models</td>
+<td style="text-align:left"><a href="https://en.wikipedia.org/wiki/Graphical_model" target="_blank" rel="noopener">Graphical models</a></td>
 <td style="text-align:left"></td>
 <td style="text-align:left">^^Quadratic programming</td>
 </tr>
@@ -492,6 +493,26 @@
 <h3 id="optimization"><a class="markdownIt-Anchor" href="#optimization"></a> Optimization</h3>
 <p>Finally, a method is needed to search among the candidate programs (in the space of represented models) for the highest-scoring one as the optimum. Stochastic gradient descent and genetic algorithms are two different ways of optimizing a model class.</p>
 <h2 id="machine-learning-tasks"><a class="markdownIt-Anchor" href="#machine-learning-tasks"></a> Machine Learning Tasks</h2>
+<p>Machine learning tasks are typically classified into two broad categories, depending on whether there is a learning “signal” or “feedback” available to a learning system: superivsed learning and unsupervised learning. Other tasks also include semi-supervised learning, active learning, reinforcement learning, etc.</p>
+<h3 id="supervised-learning"><a class="markdownIt-Anchor" href="#supervised-learning"></a> Supervised learning</h3>
+<p>Supervised learning (or inductive learning) is the most mature, the most studied and the type of learning used by most machine learning algorithms. Learning with supervision is much easier than learning without supervision. Training data includes desired outputs. The goal is to learn a general rule that maps inputs to outputs. Typically, the inputs are transformed into a feature vector, which contains a number of features that are descriptive of the object.</p>
+<ul>
+<li>Classification</li>
+<li>Regression</li>
+</ul>
+<p>Reinforcement learning is concerned with how to take actions in an environment to maximize some notion of long-term reward, such as game-theory. It differs from standard supervised learning in that correct input/output pairs are not provided, nor sub-optimal actions explicitly corrected.</p>
+<h3 id="unsupervised-learning"><a class="markdownIt-Anchor" href="#unsupervised-learning"></a> Unsupervised learning</h3>
+<p>Training data does not include desired outputs. It is hard to tell what is good learning and what is not. The program own will find the feature in its inputs as “unlabeled” data.</p>
+<ul>
+<li>Clustering</li>
+<li>Dimensionality reduction</li>
+<li>Anomaly dection</li>
+<li>Neural Networks</li>
+</ul>
+<h2 id="main-purpose-of-studying-ml"><a class="markdownIt-Anchor" href="#main-purpose-of-studying-ml"></a> Main purpose of studying ML</h2>
+<p>To make money.</p>
+<pre><code>                                                                        (To be continued...)
+</code></pre>
 
       
     </div>
@@ -692,7 +713,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#elementary-concepts"><span class="nav-number">2.</span> <span class="nav-text"> Elementary concepts</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#what-is-machine-learning"><span class="nav-number">2.1.</span> <span class="nav-text"> What is machine learning?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#what-can-machine-learning-do"><span class="nav-number">2.2.</span> <span class="nav-text"> What can machine learning do？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#three-components-of-a-machine-learning-algorithm"><span class="nav-number">3.</span> <span class="nav-text"> Three components of a machine learning algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#representation"><span class="nav-number">3.1.</span> <span class="nav-text"> Representation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#evaluation"><span class="nav-number">3.2.</span> <span class="nav-text"> Evaluation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#optimization"><span class="nav-number">3.3.</span> <span class="nav-text"> Optimization</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#machine-learning-tasks"><span class="nav-number">4.</span> <span class="nav-text"> Machine Learning Tasks</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#elementary-concepts"><span class="nav-number">2.</span> <span class="nav-text"> Elementary concepts</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#what-is-machine-learning"><span class="nav-number">2.1.</span> <span class="nav-text"> What is machine learning?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#what-can-machine-learning-do"><span class="nav-number">2.2.</span> <span class="nav-text"> What can machine learning do？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#three-components-of-a-machine-learning-algorithm"><span class="nav-number">3.</span> <span class="nav-text"> Three components of a machine learning algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#representation"><span class="nav-number">3.1.</span> <span class="nav-text"> Representation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#evaluation"><span class="nav-number">3.2.</span> <span class="nav-text"> Evaluation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#optimization"><span class="nav-number">3.3.</span> <span class="nav-text"> Optimization</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#machine-learning-tasks"><span class="nav-number">4.</span> <span class="nav-text"> Machine Learning Tasks</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#supervised-learning"><span class="nav-number">4.1.</span> <span class="nav-text"> Supervised learning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#unsupervised-learning"><span class="nav-number">4.2.</span> <span class="nav-text"> Unsupervised learning</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#main-purpose-of-studying-ml"><span class="nav-number">5.</span> <span class="nav-text"> Main purpose of studying ML</span></a></li></ol></div>
             
 
           </div>
