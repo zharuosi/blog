@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="Of Course I Still Love You">
 <meta property="og:description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew N">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-15T02:19:30.615Z">
+<meta property="og:updated_time" content="2018-03-16T01:32:39.701Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习笔记 (2)">
 <meta name="twitter:description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew N">
@@ -514,7 +514,33 @@
 <p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>w</mi><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></msup><mo>=</mo><mi>e</mi><mi>x</mi><mi>p</mi><mo>(</mo><mo>−</mo><mi>f</mi><mi>r</mi><mi>a</mi><mi>c</mi><mrow><mo>(</mo><msup><mi>x</mi><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></msup><mo>−</mo><mi>x</mi><msup><mo>)</mo><mn>2</mn></msup></mrow><mrow><mn>2</mn><msup><mi>τ</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow><annotation encoding="application/x-tex">w^{(i)} = exp(-frac{(x^{(i)} - x)^2}{2\tau^2})
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.938em;"></span><span class="strut bottom" style="height:1.188em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mopen">(</span><span class="mord mathit">i</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mrel">=</span><span class="mord mathit">e</span><span class="mord mathit">x</span><span class="mord mathit">p</span><span class="mopen">(</span><span class="mord">−</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit">c</span><span class="mord displaystyle textstyle uncramped"><span class="mopen">(</span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mopen">(</span><span class="mord mathit">i</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">−</span><span class="mord mathit">x</span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">2</span><span class="mord"><span class="mord mathit" style="margin-right:0.1132em;">τ</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
 <p>where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span> is the query point for which we’d like to know its <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span>. Essentially higher weights will be put on the training examples close to <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span>.</p>
-<p>Locally weighted linear regression is a non-parametric learning algorithm.</p>
+<h3 id="parametric-and-nonparametric"><a class="markdownIt-Anchor" href="#parametric-and-nonparametric"></a> Parametric and Nonparametric</h3>
+<p>A learning model that summarizes data with a set of parameters of fixed size (independent of the number of training examples) is called a <strong>parametric model</strong>. No matter how much data you throw at a parametric model, it won’t change its mind about how many parameters it needs. <strong>Nonparametric methods</strong> are good when you have a lot of data and no prior knowledge, and when you don’t want to worry too much about choosing just the right features. (Artificial Intelligence: A Modern Approach)</p>
+<p><a href="https://machinelearningmastery.com/parametric-and-nonparametric-machine-learning-algorithms/" target="_blank" rel="noopener">Benefits</a> of parametric models:</p>
+<ul>
+<li>Simpler: These methods are easier to understand and interpret results.</li>
+<li>Speed: Parametric models are very fast to learn from data.</li>
+<li>Less Data: They do not require as much training data and can work well even if the fit to the data is not perfect.</li>
+</ul>
+<p>Limitations of parametric models:</p>
+<ul>
+<li>Constrained: By choosing a functional form these methods are highly constrained to the specified form, because a parametric model has a fixed and finite number of parameters (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">θ</span></span></span></span>).</li>
+<li>Limited Complexity: The methods are more suited to simpler problems.</li>
+<li>Poor Fit: In practice the methods are unlikely to match the underlying mapping function.</li>
+</ul>
+<p>Benefits of nonparametric models:</p>
+<ul>
+<li>Flexibility: Capable of fitting a large number of functional forms.</li>
+<li>Power: No assumptions (or weak assumptions) about the underlying function.</li>
+<li>Performance: Can result in higher performance models for prediction.</li>
+</ul>
+<p>Limitations of non-parametric models:</p>
+<ul>
+<li>More data: Require a lot more training data to estimate the mapping function.</li>
+<li>Slower: A lot slower to train as they often have far more parameters to train.</li>
+<li>Overfitting: More of a risk to overfit the training data and it is harder to explain why specific predictions are made.</li>
+</ul>
+<p>Locally weighted linear regression is a non-parametric learning algorithm. The term non-parametric means the model structure is not specified a priori but is instead determined from data. It is not meant to imply that such models completely lack parameters but that the number and nature of the parameters are flexible and not fixed in advance. If we use unweighted linear regression, Once <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">θ</span></span></span></span> is determined, we no longer need to keep the training data around to make future predictions. In contrast, if the weighted linear regression is applied, the entire training set should be kept around.</p>
 
       
     </div>
@@ -582,6 +608,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/2018/03/15/machine-learning-3/" rel="prev" title="机器学习笔记 (3)">
+                机器学习笔记 (3) <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -663,7 +693,7 @@
               
                 <a href="/blog/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -685,7 +715,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/blog/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -718,7 +748,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-learning-problem"><span class="nav-number">2.</span> <span class="nav-text"> The Learning Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linear-regression"><span class="nav-number">3.</span> <span class="nav-text"> Linear Regression</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#linear-basis-function-models"><span class="nav-number">3.1.</span> <span class="nav-text"> Linear basis function models</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#the-least-mean-square-lms-method"><span class="nav-number">3.2.</span> <span class="nav-text"> The Least Mean Square (LMS) method</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#gradient-descent"><span class="nav-number">3.2.1.</span> <span class="nav-text"> Gradient descent</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#the-normal-equations"><span class="nav-number">3.2.2.</span> <span class="nav-text"> The normal equations</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#locally-weighted-linear-regression-lwr"><span class="nav-number">3.3.</span> <span class="nav-text"> Locally weighted linear regression (LWR)</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-learning-problem"><span class="nav-number">2.</span> <span class="nav-text"> The Learning Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linear-regression"><span class="nav-number">3.</span> <span class="nav-text"> Linear Regression</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#linear-basis-function-models"><span class="nav-number">3.1.</span> <span class="nav-text"> Linear basis function models</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#the-least-mean-square-lms-method"><span class="nav-number">3.2.</span> <span class="nav-text"> The Least Mean Square (LMS) method</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#gradient-descent"><span class="nav-number">3.2.1.</span> <span class="nav-text"> Gradient descent</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#the-normal-equations"><span class="nav-number">3.2.2.</span> <span class="nav-text"> The normal equations</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#locally-weighted-linear-regression-lwr"><span class="nav-number">3.3.</span> <span class="nav-text"> Locally weighted linear regression (LWR)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#parametric-and-nonparametric"><span class="nav-number">3.4.</span> <span class="nav-text"> Parametric and Nonparametric</span></a></li></ol></li></ol></div>
             
 
           </div>
