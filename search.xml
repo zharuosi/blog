@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[机器学习笔记 (3)]]></title>
     <url>%2Fblog%2F2018%2F03%2F15%2Fmachine-learning-3%2F</url>
-    <content type="text"><![CDATA[Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew Ng’s Lecture Notes CS229 of Standford, Machine Learning course of SJTU IEEE-yangyang, and Machine Learning Crash Course of Google. Supervised Learning In supervised learning, each example is a pair consisting of an input object (typically a vector) and a desired output value (also called the supervisory signal), k.]]></content>
+    <content type="text"><![CDATA[Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew Ng’s Lecture Notes CS229 of Standford, Machine Learning course of SJTU IEEE-yangyang, and Machine Learning Crash Course of Google. Supervised Learning In supervised learning, each example is a pair consisting of an input object (typically a vector) and a desired output value (also called the supervisory signal), like SVM, regression, decision trees, naive Bayes, etc. Logistic regression]]></content>
       <categories>
         <category>笔记篇之夙兴夜寐</category>
       </categories>
