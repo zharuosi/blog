@@ -38,7 +38,7 @@ $$ = \prod_{i=1}^m ((h_{\theta}(x^{(i)}))^{y^{(i)}} (1 - h_{\theta}(x^{(i)}))^{1
 In practice, it is often convenient to use the log-likelihood (natural logarithm):
 $$\log L(\theta) = \sum_{i=1}{m} y^{(i)}\log h(x^{(i)}) + (1-y^{(i)})log(1 - h_{\theta}(x^{(i)}))$$
 The problem is to find the independent variable at which the function values are maximized:
-$${\rm argmax}_{\theta} \sum_{i=1}{m} y^{(i)}\log h(x^{(i)}) + (1-y^{(i)})log(1 - h_{\theta}(x^{(i)}))$$
+$${argmax}_{\theta} \sum_{i=1}{m} y^{(i)}\log h(x^{(i)}) + (1-y^{(i)})log(1 - h_{\theta}(x^{(i)}))$$
 By derivation, we can find the $\theta$. there are some optimization methods:
 - Gradient descent
 - Newton method
