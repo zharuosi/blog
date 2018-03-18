@@ -25,7 +25,7 @@ Given a training set, learn a function $h: X->Y$ so that $h(x)$ is a good predic
 ## Linear Regression
 
 Linear regression is a very simple approach for supervised learning. We use linear regression to predict a quantitative response $Y$ from the predictor variable $X$. The relationship between $X$ and $Y$ is assumed to be linear. A linear function $h(x)$ can be used to map from $X$ to $Y$:
-$$ h(x) = \sum_{i=0}^n \theta_i x_i = \theta ^T \phi(x)$$
+$$ h(x) = \sum_{i=0}^n \theta_i x_i = \theta ^T \phi(x) ****$$
 
 The intercept term is: $x_0 = 1$. Note that here $i$ is not the number of samples.
 
