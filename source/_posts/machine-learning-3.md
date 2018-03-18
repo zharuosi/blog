@@ -39,7 +39,7 @@ In practice, it is often convenient to use the log-likelihood (natural logarithm
 $$\log L(\theta) = \sum_{i=1}{m} y^{(i)}\log h(x^{(i)}) + (1-y^{(i)})log(1 - h_{\theta}(x^{(i)}))$$
 The problem is to find the independent variable at which the function values are maximized:
 $${\rm argmax}_{\theta} \sum_{i=1}{m} y^{(i)}\log h(x^{(i)}) + (1-y^{(i)})log(1 - h_{\theta}(x^{(i)}))$$
-After derivation, there are some optimization methods:
+By derivation, we can find the $\theta$. there are some optimization methods:
 - Gradient descent
 - Newton method
 - Conjugate gradient
