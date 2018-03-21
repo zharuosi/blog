@@ -25,7 +25,7 @@ Given a training set, learn a function $h: X->Y$ so that $h(x)$ is a good predic
 ## Linear Regression
 
 Linear regression is a very simple approach for supervised learning. We use linear regression to predict a quantitative response $Y$ from the predictor variable $X$. The relationship between $X$ and $Y$ is assumed to be linear. A linear function $h(x)$ can be used to map from $X$ to $Y$:
-$$ h(x) = \sum_{i=0}^n \theta_i x_i = \theta ^T \phi(x) ****$$
+$$ h(x) = \sum_{i=0}^n \theta_i x_i = \theta ^T \phi(x) $$
 
 The intercept term is: $x_0 = 1$. Note that here $i$ is not the number of samples.
 
@@ -56,7 +56,7 @@ The problem is how to get a minimum $J(\theta)$.
 
 Apply a gradient descent algorithm for every $j$:
 $$ \theta_j:= \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta) $$
-where $j$ is the number of basis function ($1\leq j\leq M$).
+where $j$ is the number of basis function ($1\leq j\leq M$). Note that descent means the direction is the opposite of the gradient ($- \nabla J$).
 
 For a single sample, the LMS update rule (or Widro-Hoff learning rule) can be obtained as:
 $$ \theta_j:= \theta_j - \alpha (h_{\theta}(x^{(i)}) - y^{(i)})x_j^{(i)} $$
@@ -124,7 +124,7 @@ For probalilistic interpretation of Least Mean Square, by the independence assum
 The problem is how to get a minimum $J(\theta)$ given as:
 $$ J(\theta) = \sum_{i=1}^m w^{(i)}(h_{\theta}(x^{(i)}) - y^{(i)})^2 $$
 where
-$$ w^{(i)} = exp(-frac{(x^{(i)} - x)^2}{2\tau^2})$$
+$$ w^{(i)} = exp(-\frac{(x^{(i)} - x)^2}{2\tau^2})$$
 where $x$ is the query point for which we'd like to know its $y$. Essentially higher weights will be put on the training examples close to $x$.
 
 ### Parametric and Nonparametric
