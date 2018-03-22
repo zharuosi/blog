@@ -52,6 +52,38 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="fonts.google.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Ubuntu:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
@@ -75,7 +107,7 @@
 
 
 
-  <meta name="keywords" content="Machine Learning,Artificial Intelligence,Classification,Logistic Regression," />
+  <meta name="keywords" content="Machine Learning,Artificial Intelligence,Classification,Logistic Regression,LDA," />
 
 
 
@@ -87,7 +119,7 @@
 
 
 <meta name="description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew N">
-<meta name="keywords" content="Machine Learning,Artificial Intelligence,Classification,Logistic Regression">
+<meta name="keywords" content="Machine Learning,Artificial Intelligence,Classification,Logistic Regression,LDA">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器学习笔记 (3)">
 <meta property="og:url" content="https://zharuosi.github.io/blog/2018/03/15/machine-learning-3/index.html">
@@ -95,7 +127,8 @@
 <meta property="og:description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew N">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/8/88/Logistic-curve.svg">
-<meta property="og:updated_time" content="2018-03-21T02:27:17.847Z">
+<meta property="og:image" content="https://helloacm.com/wp-content/uploads/2016/03/linear-discriminant-analysis.png">
+<meta property="og:updated_time" content="2018-03-22T02:13:13.933Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习笔记 (3)">
 <meta name="twitter:description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew N">
@@ -368,8 +401,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/笔记篇之夙兴夜寐/" itemprop="url" rel="index">
-                    <span itemprop="name">笔记篇之夙兴夜寐</span>
+                  <a href="/blog/categories/笔记篇之夙兴夜寐h/" itemprop="url" rel="index">
+                    <span itemprop="name">笔记篇之夙兴夜寐h</span>
                   </a>
                 </span>
 
@@ -503,7 +536,23 @@ From the definition of <span class="katex"><span class="katex-mathml"><math><sem
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.6513970000000002em;"></span><span class="strut bottom" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mrel">=</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathit">m</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mop op-limits"><span class="vlist"><span style="top:1.1776689999999999em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">i</span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span><span class="op-symbol large-op mop">∑</span></span></span><span style="top:-1.2500050000000003em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">m</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">h</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit" style="margin-right:0.02778em;">θ</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mopen">(</span><span class="mord mathit">i</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathrm">1</span><span class="mbin">−</span><span class="mord"><span class="mord mathit">h</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit" style="margin-right:0.02778em;">θ</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mopen">(</span><span class="mord mathit">i</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose">)</span><span class="mclose">)</span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mopen">(</span><span class="mord mathit">i</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mopen">(</span><span class="mord mathit">i</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></p>
 <p>(H is a matrix, where is <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05724em;">j</span></span></span></span>?)</p>
 <p>Logistic regression has a linear decision boundary (hyperplane).</p>
-<h3 id="case-study"><a class="markdownIt-Anchor" href="#case-study"></a> Case study</h3>
+<h2 id="linear-discriminant-analysis-lda"><a class="markdownIt-Anchor" href="#linear-discriminant-analysis-lda"></a> Linear discriminant analysis (LDA)</h2>
+<p>Linear discriminant analysis (LDA), which is also known as Fisher’s linear discriminant, is a simple way for dimensionality reduction in linear classification. By LDA, we can find a linear combination of features that classifies objects in two or more groups.</p>
+<ul>
+<li>Compared with logistic regression, LDA assumes that the independent variables are normally distributed (Gaussian distribution). Logistic regression is more preferable in applications when the assumption is not valid.</li>
+<li>Compared with analysis of variance (ANOVA), ANOVA uses categorical independent variables and a continuous dependent variable while LDA adopts continuous independent variables and a categorical dependent variable.</li>
+<li>Compared with principle component analysis (PCA), PCA is an unsupervised learning method, which  does not take into account any difference in class, only for dimensionality reduction. LDA attemps to model the difference between the classes of data using labeled data.</li>
+<li>Compared with factor analysis, factor analysis builds the feature combinations based on differences. LDA deals with similarities. LDA is a dependence technique.</li>
+</ul>
+<p>A dependence method is one in which a variable of set of variables is identifies as the dependent variable to be predicted or explained by other, independent variables. Dependence techniques include multiple regression analysis, discriminant analysis, and conjoint analysis. An interdependence method is one in which no single variable or group of variables is defined as being independent or dependent. The goal of interdependence methods is data reduction, or grouping things together. Cluster analysis, factor analysis, and multidimensional scaling are the most commonly used interdependence methods.</p>
+<p>Consider the <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> dimensional input vector <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span> and project it down to one dimension:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>w</mi><mi>T</mi></msup><mi>x</mi></mrow><annotation encoding="application/x-tex">y = w^Tx 
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8913309999999999em;"></span><span class="strut bottom" style="height:1.0857709999999998em;vertical-align:-0.19444em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mrel">=</span><span class="mord"><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathit">x</span></span></span></span></span></p>
+<p>where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02691em;">w</span></span></span></span> is the weight vector for linear transformation. Thus we can place a threshold on <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span> and then classify <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span> as <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub><mi mathvariant="normal">/</mi><msub><mi>C</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">C_1/C_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07153em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathrm">/</span><span class="mord"><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07153em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>.</p>
+<p>The dimensionality reduction leads to a considerable loss of information, and classes may become strongly overlapping in the low dimensional space. The goal is to find a projection that maximizes the class separation by adjusting <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02691em;">w</span></span></span></span>. Therefore, we need to maxmimize the between-class scatter (use difference of mean values) and minimize the within-class scatter (use covariance matrix).</p>
+<img src="https://helloacm.com/wp-content/uploads/2016/03/linear-discriminant-analysis.png" width="50%" height="50%">
+Fig. 1. Comparison of the good projection and the bad projection in LDA
+<h3 id="algorithm-of-lda"><a class="markdownIt-Anchor" href="#algorithm-of-lda"></a> Algorithm of LDA</h3>
 
       
     </div>
@@ -552,6 +601,8 @@ From the definition of <span class="katex"><span class="katex-mathml"><math><sem
             <a href="/blog/tags/Classification/" rel="tag"># Classification</a>
           
             <a href="/blog/tags/Logistic-Regression/" rel="tag"># Logistic Regression</a>
+          
+            <a href="/blog/tags/LDA/" rel="tag"># LDA</a>
           
         </div>
       
@@ -665,7 +716,7 @@ From the definition of <span class="katex"><span class="katex-mathml"><math><sem
               
               <div class="site-state-item site-state-categories">
                 <a href="/blog/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -676,7 +727,7 @@ From the definition of <span class="katex"><span class="katex-mathml"><math><sem
               
               <div class="site-state-item site-state-tags">
                 <a href="/blog/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -709,7 +760,7 @@ From the definition of <span class="katex"><span class="katex-mathml"><math><sem
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#supervised-learning"><span class="nav-number">2.</span> <span class="nav-text"> Supervised Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#logistic-regression"><span class="nav-number">3.</span> <span class="nav-text"> Logistic regression</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#gradient-ascent"><span class="nav-number">3.1.</span> <span class="nav-text"> Gradient ascent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#newtons-method-newton-raphson-method"><span class="nav-number">3.2.</span> <span class="nav-text"> Newton’s method (Newton-Raphson method)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#case-study"><span class="nav-number">3.3.</span> <span class="nav-text"> Case study</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#supervised-learning"><span class="nav-number">2.</span> <span class="nav-text"> Supervised Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#logistic-regression"><span class="nav-number">3.</span> <span class="nav-text"> Logistic regression</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#gradient-ascent"><span class="nav-number">3.1.</span> <span class="nav-text"> Gradient ascent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#newtons-method-newton-raphson-method"><span class="nav-number">3.2.</span> <span class="nav-text"> Newton’s method (Newton-Raphson method)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linear-discriminant-analysis-lda"><span class="nav-number">4.</span> <span class="nav-text"> Linear discriminant analysis (LDA)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#algorithm-of-lda"><span class="nav-number">4.1.</span> <span class="nav-text"> Algorithm of LDA</span></a></li></ol></li></ol></div>
             
 
           </div>
