@@ -2,7 +2,7 @@
 title: 机器学习笔记 (3)
 date: 2018-03-15 23:00:30
 categories: 笔记篇之夙兴夜寐
-tags: [Machine Learning,Artificial Intelligence,Classification,Logistic Regression]
+tags: [Machine Learning,Artificial Intelligence,Classification,Logistic Regression,LDA]
 ---
 
 ## Introduction
@@ -14,7 +14,7 @@ Here is a not so short note (Rolling Update) for machine learning and artificial
 In supervised learning, each example is a pair consisting of an input object (typically a vector) and a desired output value (also called the supervisory signal), like SVM, regression, decision trees, naive Bayes, etc.
 <!-- more -->
 
-## Logistic regression
+## Logistic Regression
 
 In logistic regression, the dependent variable is categorical. Therefore, logistic regression is a classification model (with discrete labels). Logistic regression can be binomial, ordinal or multinomial.
 
@@ -84,13 +84,89 @@ $$ H = \frac{1}{m} \sum_{i=1}^m h_{\theta}(x^{(i)})( 1 - h_{\theta}(x^{(i)}) )x^
 
 Logistic regression has a linear decision boundary (hyperplane).
 
-### Case study
+## Linear discriminant analysis (LDA)
 
+Linear discriminant analysis (LDA), which is also known as Fisher's linear discriminant, is a simple way for dimensionality reduction in linear classification. By LDA, we can find a linear combination of features that classifies objects in two or more groups.
+- Compared with logistic regression, LDA assumes that the independent variables are normally distributed (Gaussian distribution). Logistic regression is more preferable in applications when the assumption is not valid.
+- Compared with analysis of variance (ANOVA), ANOVA uses categorical independent variables and a continuous dependent variable while LDA adopts continuous independent variables and a categorical dependent variable.
+- Compared with principle component analysis (PCA), PCA is an unsupervised learning method, which  does not take into account any difference in class, only for dimensionality reduction. LDA attemps to model the difference between the classes of data using labeled data.
+- Compared with factor analysis, factor analysis builds the feature combinations based on differences. LDA deals with similarities. LDA is a dependence technique.
 
+A dependence method is one in which a variable of set of variables is identifies as the dependent variable to be predicted or explained by other, independent variables. Dependence techniques include multiple regression analysis, discriminant analysis, and conjoint analysis. An interdependence method is one in which no single variable or group of variables is defined as being independent or dependent. The goal of interdependence methods is data reduction, or grouping things together. Cluster analysis, factor analysis, and multidimensional scaling are the most commonly used interdependence methods.
 
+Consider the $n$ dimensional input vector $x$ and project it down to one dimension:
+$$ y = w^Tx $$
+where $w$ is the weight vector for linear transformation. Thus we can place a threshold on $y$ and then classify $y$ as $C_1/C_2$.
 
+The dimensionality reduction leads to a considerable loss of information, and classes may become strongly overlapping in the low dimensional space. The goal is to find a projection that maximizes the class separation by adjusting $w$. Therefore, we need to maxmimize the between-class scatter (use difference of mean values) and minimize the within-class scatter (use covariance matrix).
 
+<img src="https://helloacm.com/wp-content/uploads/2016/03/linear-discriminant-analysis.png" width="50%" height="50%">
+Fig. 1. Comparison of the good projection and the bad projection in LDA
 
+### Algorithm of LDA
+
+#### Two-class cases
+
+The purpose of LDA considers maximizing the "Rayleigh quotient":
+$$ J(w) = \frac{w^T S_B w}{w^T S_W w} $$
+where $S_B$ is the between class scatter matrix and $S_W$ is the within class scatter matrix. 
+
+the means of every class is:
+$$ \mu_1 = \frac{1}{N_1} \sum_{x\in c_1} \mathbf{x} $$
+$$ \mu_2 = \frac{1}{N_2} \sum_{x\in c_2} \mathbf{x} $$
+$$ \mu = \frac{1}{N_1+N_2} \sum_{x\in all} \mathbf{x} $$
+where $x_k (k=1,..,m)$ is a vector in $X_{m\times n}$.
+
+The scatter matrix for every class is defined as $S_1$ and $S_2$:
+$$ S_1 = \sum_{x\in c_1} (x - \mu_1) (x - \mu_i)^T $$
+$$ S_2 = \sum_{x\in c_2} (x - \mu_2) (x - \mu_2)^T $$
+$$ S_W = S_1 + S_2 $$
+$$ S_B = N_1(\mu_1 - \mu) (\mu_1 - \mu)^T + N_2(\mu_2 - \mu) (\mu_2 - \mu)^T = (\mu_2 - \mu_1) (\mu_2 - \mu_1)^T $$
+
+The solution to maximize the $J(w)$ can be obtained by derivation and Lagrange multiplier. Let $||w^T S_w w||=1$ to find one solution for $w$.
+$$ \nabla_w c(w) = \nabla_w (w^T S_B w - \lambda (w^T S_w w - 1)) = 0 $$
+The Fisher linear discrimination can be obtained as:
+$$ S_w^{-1} S_B w = \lambda w $$
+Thus $w$ is the eigenvector of the matrix $S_w^{-1} S_B$. Solution is based on solving a generalized eigenvalue problem. In two-class case, $w$ is calculated as:
+$$ w = S_w^{-1} (\mu_2 - \mu_1) $$
+
+#### Multi-class cases
+
+The purpose is to maximize the "Rayleigh quotient":
+$$ J(w) = \frac{\mid A^T S_B A \mid}{\mid A^T S_W A \mid} $$
+where $A$ is the projection matrix.
+
+$$ \mu_j = \frac{1}{N_j} \sum_{x\in c_j} \mathbf{x} $$
+$$ \mu = \frac{1}{\sum_{j=1}^C N_j} \sum_{x\in all} \mathbf{x} $$
+where $c_j$ means the group of class $j$. $C$ is the number of classes. $N_j$ is the  sample number in the class $c_j$.
+
+The scatter matrix is generalized as:
+$$ S_j = \sum_{x\in c_j} (x - \mu_j) (x - \mu_j)^T $$
+
+$$ S_W = \sum_{j=1}^C S_j = \sum_{j=1}^C \sum_{x_i\in c=j} (x_i - \mu_{c=j}) (x_i - \mu_{c=j})^T $$
+$$ S_B = \sum_{j=1}^C N_j(\mu_j - \mu) (\mu_j - \mu)^T $$
+where $N_j$ is used as the weight. Determinants are the product of all eigenvalues of the matrix.
+
+We also have:
+$$ S_w^{-1} S_B A_k = \lambda A_k $$
+
+To solve $A$, we need to use the eigenvalues of $S_w^{-1} S_B$ and obtain the matrix $A$ by $K$ eigenvectors. $K$ is the number of base vectors, namely the dimension of projection matrix $A$ as $A=[A_1\mid A_2 \mid ... A_K]$. The maximum of $K$ is $C-1$. The classification will be better for the eigenvectors with respect to the larger eigenvalues.
+
+Multi-class classification can be transferred to binary classification. The techniques can be categorized into One vs Rest and One vs One.
+
+#### One vs Rest
+
+OVR (or one-vs.-all, OvA, one-against-all, OAA) involves training a single classifier per class, with the samples of that class as positive samples and all other samples as negatives. The base classifiers are required to produce a real-valued confidence score for its decision, rather than just a class label, e.g., a new label vector $z$ where $z_i = 1$ if $y_i = k$ and $z_i = 0$ otherwise. We can use $C - 1$ binary classifiers. Each binary classifier solves the problem of separating samples in a particular class from samples not in that class. This popular strategy suffers from several problems. Firstly, the scale of the confidence values may differ between the binary classifiers. Second, even if the class distribution is balanced in the training set, the binary classification learners see unbalanced distributions because typically the set of negatives they see is much larger than the set of positives (?).
+
+- Benefits: Small storing cost and short test time.
+- Shortcomings: Long training time and imbalanced Samples.
+
+#### One vs One
+
+OVO involves using $C(C-1)/2$ binary classifiers for every possible pairs of classes and learning to distinguish these two classes. At prediction time, a voting scheme is applied: all $C(C-1)/2$ classifiers are applied to an sample. The class that got the highest number of vote amongst the discriminant functions gets predicted by the combined classifier. Sometimes it suffers from ambiguities in that some regions of its input space may receive the same number of votes.
+
+- Benefits: Short training time.
+- Shortcomings: Too many classifiers, large storing cost and long test time.
 
 
 

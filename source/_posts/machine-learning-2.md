@@ -37,8 +37,6 @@ Multiple linear regression is a generalization of linear regression by consideri
 
 The multivariate linear regression is a generalization of multiple linear regression model to the case of more than one dependent variable ($Y$ will be a matrix).
 
-
-
 ### Linear basis function models
 
 In polynomial curve fitting, the feature extraction is represented as the polynomial basis functions: $\phi_j(x) = x^j$, $j$ is the polynomial order ($1\leq j\leq M$). A small change in $x$ affects all basis functions. Thus using a polynomial basis function is global.
