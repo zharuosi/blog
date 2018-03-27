@@ -94,6 +94,6 @@ tags: Navy
 希望人类不要再有战争，希望所有人能和自己的爱人永远在一起。
 
 ![1](https://pic4.zhimg.com/80/v2-5cd75298e834a054908e23f4f59a67dd_hd.jpg)
-![2](https://pic3.zhimg.com/80/v2-67b77dce4bb3ba78e40eeda31e4cf42a_hd.jpg)
+![2](https://github.com/zharuosi/blog/blob/source/source/image/v2-67b77dce4bb3ba78e40eeda31e4cf42a_hd.jpg)
 
 
