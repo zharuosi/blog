@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[理解螺旋桨]]></title>
     <url>%2Fblog%2F2018%2F04%2F06%2Fpropeller-concepts%2F</url>
-    <content type="text"><![CDATA[引言 螺旋桨是一种常见的推进装置，一般由桨毂和桨叶组成。在空气中旋转的螺旋桨可以为飞机提供动力，在水里旋转的螺旋桨可以推动船舶前进。本文介绍螺旋设计中的基本概念和流体力学原理。 几何模型]]></content>
+    <content type="text"><![CDATA[引言 螺旋桨是一种常见的推进装置，一般由桨毂和桨叶组成。在空气中旋转的螺旋桨可以为飞机提供动力，在水里旋转的螺旋桨可以推动船舶前进。本文介绍螺旋设计中的基本概念和流体力学原理。 Geometry Pitch: the axial distance advanced during one complete revolution of screw Face: the pressure side Back: the suction side]]></content>
       <categories>
         <category>工技篇之曹衣出水</category>
       </categories>
