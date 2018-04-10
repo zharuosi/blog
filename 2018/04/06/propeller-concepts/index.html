@@ -118,19 +118,19 @@
 
 
 
-<meta name="description" content="引言  螺旋桨是一种常见的推进装置，一般由桨毂和桨叶组成。在空气中旋转的螺旋桨可以为飞机提供动力，在水里旋转的螺旋桨可以推动船舶前进。本文介绍螺旋设计中的基本概念和流体力学原理。  Geometry">
+<meta name="description" content="引言  螺旋桨是一种常见的推进装置，一般由桨毂和桨叶组成。在空气中旋转的螺旋桨可以为飞机提供动力，在水里旋转的螺旋桨可以推动船舶前进。本文介绍螺旋桨设计中的基本概念和流体力学原理。[Reference](http://web.mit.edu/2.016/www/handouts/2005Reading10.pdf)  Geometry">
 <meta name="keywords" content="Principle of Naval Architecture,Marine Hydrodynamics">
 <meta property="og:type" content="article">
 <meta property="og:title" content="理解螺旋桨">
 <meta property="og:url" content="https://zharuosi.github.io/blog/2018/04/06/propeller-concepts/index.html">
 <meta property="og:site_name" content="Of Course I Still Love You">
-<meta property="og:description" content="引言  螺旋桨是一种常见的推进装置，一般由桨毂和桨叶组成。在空气中旋转的螺旋桨可以为飞机提供动力，在水里旋转的螺旋桨可以推动船舶前进。本文介绍螺旋设计中的基本概念和流体力学原理。  Geometry">
+<meta property="og:description" content="引言  螺旋桨是一种常见的推进装置，一般由桨毂和桨叶组成。在空气中旋转的螺旋桨可以为飞机提供动力，在水里旋转的螺旋桨可以推动船舶前进。本文介绍螺旋桨设计中的基本概念和流体力学原理。[Reference](http://web.mit.edu/2.016/www/handouts/2005Reading10.pdf)  Geometry">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/zharuosi/blog/source/source/images/propeller-screw-icons-vector-16504568.jpg">
-<meta property="og:updated_time" content="2018-04-08T23:51:55.936Z">
+<meta property="og:updated_time" content="2018-04-10T01:55:23.205Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="理解螺旋桨">
-<meta name="twitter:description" content="引言  螺旋桨是一种常见的推进装置，一般由桨毂和桨叶组成。在空气中旋转的螺旋桨可以为飞机提供动力，在水里旋转的螺旋桨可以推动船舶前进。本文介绍螺旋设计中的基本概念和流体力学原理。  Geometry">
+<meta name="twitter:description" content="引言  螺旋桨是一种常见的推进装置，一般由桨毂和桨叶组成。在空气中旋转的螺旋桨可以为飞机提供动力，在水里旋转的螺旋桨可以推动船舶前进。本文介绍螺旋桨设计中的基本概念和流体力学原理。[Reference](http://web.mit.edu/2.016/www/handouts/2005Reading10.pdf)  Geometry">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/zharuosi/blog/source/source/images/propeller-screw-icons-vector-16504568.jpg">
 
 
@@ -444,13 +444,37 @@
       
         <h2 id="引言"><a class="markdownIt-Anchor" href="#引言"></a> 引言</h2>
 <img src="https://raw.githubusercontent.com/zharuosi/blog/source/source/images/propeller-screw-icons-vector-16504568.jpg" width="50%" height="50%">
-螺旋桨是一种常见的推进装置，一般由桨毂和桨叶组成。在空气中旋转的螺旋桨可以为飞机提供动力，在水里旋转的螺旋桨可以推动船舶前进。本文介绍螺旋设计中的基本概念和流体力学原理。
+螺旋桨是一种常见的推进装置，一般由桨毂和桨叶组成。在空气中旋转的螺旋桨可以为飞机提供动力，在水里旋转的螺旋桨可以推动船舶前进。本文介绍螺旋桨设计中的基本概念和流体力学原理。[Reference](http://web.mit.edu/2.016/www/handouts/2005Reading10.pdf)
 <h2 id="geometry"><a class="markdownIt-Anchor" href="#geometry"></a> Geometry</h2>
 <a id="more"></a>
 <ul>
-<li>Pitch: the axial distance advanced during one complete revolution of screw</li>
-<li>Face: the pressure side</li>
-<li>Back: the suction side</li>
+<li>
+<p>Hub: The solid center disk that mates with the propeller shaft and to which the blades are attached.  A smaller hub can lead to a larger thrust, however there is a tradeoff between size and strength.</p>
+</li>
+<li>
+<p>Blade: Twisted fins or foils that protrude from the propeller hub. The shape and the speed at which they are driven dictates the torque a given propeller can deliver. Higher diameter equates to higher efficiency for low speed vehicles (&lt;35kn). To obtain higher torque, the rpm (revolution per minute) should be reduced and the diameter should be increased. In high speed vessels, larger diameters lead to high drag.</p>
+</li>
+<li>
+<p>Face: the pressure face, high-pressure side, faces backwards and pushes the water.</p>
+</li>
+<li>
+<p>Back: the suction face, low-pressure side, faces upstream and towards the front of the vessel.</p>
+</li>
+<li>
+<p>Leading edge: the side cuts through the fluid.</p>
+</li>
+<li>
+<p>Trailing edge: the edge of the downstreams.</p>
+</li>
+<li>
+<p>Pitch: the axial distance advanced during one complete rotation of screw is called nominal pitch. The distance the ship is propelled forward in one propeller rotation is actually less than the pitch. Pitch ratio is the ratio of pitch to diameter.</p>
+</li>
+<li>
+<p>Slip:The difference between the nominal pitch (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mi>n</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">pnt</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.61508em;"></span><span class="strut bottom" style="height:0.80952em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">p</span><span class="mord mathit">n</span><span class="mord mathit">t</span></span></span></span>) and the <strong>actual</strong> distance (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>V</mi><mi>A</mi></msub><mi>t</mi></mrow><annotation encoding="application/x-tex">V_At</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.22222em;">V</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.22222em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">A</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathit">t</span></span></span></span>) in one retation.</p>
+</li>
+<li>
+<p>Propeller section: A circular arc section cut through the blade at some radius. We always expanded it to 2-D foil section.</p>
+</li>
 </ul>
 
       
