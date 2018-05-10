@@ -11,7 +11,7 @@ Here is a not so short note (Rolling Update) for machine learning and artificial
 
 ## Supervised Learning
 
-In supervised learning, each example is a pair consisting of an input object (typically a vector) and a desired output value (also called the supervisory signal), like SVM, regression, decision trees, naive Bayes, etc.
+In supervised learning, each example is a pair consisting of an input object (typically a vector) and a desired output value (also called the supervisory signal), like SVM, regression, decision trees, naive Bayes, etc. Classification means the output takes discrete values. Three common classification methods are Logistic Regression, Fisher Linear Discriminant Analysis and Nearest Neighbor Classification.
 <!-- more -->
 
 ## Logistic Regression
