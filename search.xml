@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[听听看]]></title>
+    <url>%2Fblog%2F2018%2F06%2F17%2Fmelody-eva%2F</url>
+    <content type="text"><![CDATA[优秀的作品是不会随时间流逝的。从1995年10月4日到1996年3月27日，东京电视台首次播放了一部动画，共26话，在日本引起了轰动和争议，常被视为日本动画历史上的里程碑。尽管此后优秀的动画层出不穷，至今它仍被很多爱好者认为是最伟大的动画作品。它就是《新世纪福音战士》，日语《新世紀エヴァンゲリオン》，英语Neon Genesis Evangelion，简称EVA，讲述了由人操纵的Evangelion与外星神秘生物“使徒”作战的故事。如果你认为它是俗套的机器人大战外星人的动画就错了。EVA不仅仅有炫酷的战斗情节，更注重的是人物内心的发展，大量宗教、哲学、心理意象的交织让它变得复杂。它不是某个超级英雄拯救地球的动画，它讲的都是普通人的故事。这里的普通人指的是他们都有各种各样的缺点，每个人都能从中看到自己的影子。比如，男主碇真嗣虽然是司令的儿子，权二代，但是内心却非常懦弱、脆弱、内向。女主之一明日香虽然德日混血，14岁就大学毕业的天才，却命运坎坷，年幼目睹单亲母亲自杀，自尊心太强，只能通过事事争第一来寻找自己的存在感。女主之一绫波丽，长的跟司令死去的老婆一模一样，典型的三无少女，冷漠，没有情感，从不在意他人感受，人偶一般的存在。所有人都有自己的秘密，而EVA的故事也是他们逐渐打开自己心扉的历程，在成长中见证世界的残酷。 EVA打破了很多传统，也创造了很多神话。之所以能够被封为神作，一半原因来自其优秀的配乐。好的动漫配乐姑且分三种境界，第一层是好听，这是起码的标准。第二层境界是在好听的基础上，配乐能够契合剧情，渲染气氛，引起人们的共鸣和回忆。第三层境界，配乐不再附属于剧情，而且能够推动剧情的发展，是不可缺少的一部分，与人物的塑造、情节的发展融为一体。EVA里的配乐大多数都达到了第三层境界，以至于我已经分不清，是EVA成就了这些音乐，还是这些音乐成就了EVA。 下面就听听看吧。由于EVA充满了各种暴力血腥的战斗场景，所以各种燃爆了的BGM必不可少。但在着重描写人物心理变化的情节中，也有很多非燃向的经典配乐，有大量的西方古典音乐元素，比如最经典的，巴赫的G弦上的咏叹调。以下就列一些我喜欢的。 来吧甜蜜的死亡 残酷天使的行动纲领 Fly me to the moon 给我一双翅膀 道别在今日 樱流]]></content>
+      <categories>
+        <category>听听看</category>
+      </categories>
+      <tags>
+        <tag>Melody</tag>
+        <tag>EVA</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[机器学习笔记（5）理解支持向量机]]></title>
     <url>%2Fblog%2F2018%2F06%2F09%2Fmachine-learning-5%2F</url>
     <content type="text"><![CDATA[Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew Ng’s Lecture Notes CS229 of Standford, Machine Learning course of SJTU IEEE-yangyang, and Machine Learning Crash Course of Google. Support Vector Machine Linear classifier A classification decision is made by the linear classifier based on the value of a linear combination of the characteristics (features), which is typically presented to the machine by a feature vector. Input: x⃗\vec{x}​x​⃗​​ Output: y=f(w⃗⋅x⃗)=f(∑jwjxj)y = f(\vec{w} \cdot \vec{x}) = f(\sum_j w_j x_j)y=f(​w​⃗​​⋅​x​⃗​​)=f(∑​j​​w​j​​x​j​​) In the case of support vector machines, a data point is viewed as a ppp-dimensional vector (a list of ppp numbers). The points was supposed to separated by a p−1p-1p−1 dimensional hyperplane. Many hyperplanes exists. The best choice is the one that represents the largest margin between the two classes, which is known as the maximum-margin hyperplane. This classifier is also called as a maximum margin classifier. Kernel machines are used to compute a non-linearly separable functions into a higher dimension linearly separable function.]]></content>
