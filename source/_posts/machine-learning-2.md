@@ -1,5 +1,5 @@
 ---
-title: 机器学习笔记 (2)
+title: 机器学习笔记（2）理解贝耶斯
 date: 2018-03-06 20:23:44
 categories: 笔记篇之夙兴夜寐
 tags: [Machine Learning,Artificial Intelligence,Linear Regression]

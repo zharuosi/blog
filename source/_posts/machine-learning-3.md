@@ -1,5 +1,5 @@
 ---
-title: 机器学习笔记 (3)
+title: 机器学习笔记（3）理解分类
 date: 2018-03-15 23:00:30
 categories: 笔记篇之夙兴夜寐
 tags: [Machine Learning,Artificial Intelligence,Classification,Logistic Regression,LDA]
@@ -167,6 +167,17 @@ OVO involves using $C(C-1)/2$ binary classifiers for every possible pairs of cla
 
 - Benefits: Short training time.
 - Shortcomings: Too many classifiers, large storing cost and long test time.
+
+
+## Nearest Neighbor Classification
+
+The basic idea of the nearest neighbor classification is: a new sample is classified by calculating the distance to the nearest training case; the sign of that point then determines the classification of the sample.
+
+The k-NN classifier extends this idea by taking the k nearest neighbors and assigning the sign of the majority. It is common to select k small and odd to break ties (typically 1, 3 or 5). Larger k values help reduce the effects of noisy points within the training data set, and the choice of k is often performed through cross-validation. KNN classifier is non-parametric, which means it does not make any assumptions on the underlying data distribution. The model structure is determined from the data. KNN is a good choice for a classification study when there is little or no prior knowledge about the distribution data. There is no explicit training phase for KNN. KNN makes predictions just-in-time by calculating the similarity between an input sample and each training instance. A sample is classified by a majority vote of its neighbors, with the sample being assigned to the class most common among its k nearest neighbors.
+
+
+ 
+
 
 
 

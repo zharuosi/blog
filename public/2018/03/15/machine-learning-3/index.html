@@ -121,16 +121,16 @@
 <meta name="description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew N">
 <meta name="keywords" content="Machine Learning,Artificial Intelligence,Classification,Logistic Regression,LDA">
 <meta property="og:type" content="article">
-<meta property="og:title" content="机器学习笔记 (3)">
+<meta property="og:title" content="机器学习笔记（3）理解分类">
 <meta property="og:url" content="https://zharuosi.github.io/blog/2018/03/15/machine-learning-3/index.html">
 <meta property="og:site_name" content="Of Course I Still Love You">
 <meta property="og:description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew N">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/8/88/Logistic-curve.svg">
 <meta property="og:image" content="https://helloacm.com/wp-content/uploads/2016/03/linear-discriminant-analysis.png">
-<meta property="og:updated_time" content="2018-05-10T03:20:59.283Z">
+<meta property="og:updated_time" content="2018-06-20T02:28:46.607Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="机器学习笔记 (3)">
+<meta name="twitter:title" content="机器学习笔记（3）理解分类">
 <meta name="twitter:description" content="Introduction Here is a not so short note (Rolling Update) for machine learning and artificial intelligience. Main concepts and some references are presented. This note is based on Wikipedia, Andrew N">
 <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/8/88/Logistic-curve.svg">
 
@@ -168,7 +168,7 @@
 
 
 
-  <title>机器学习笔记 (3) | Of Course I Still Love You</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>机器学习笔记（3）理解分类 | Of Course I Still Love You</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -366,7 +366,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">机器学习笔记 (3)</h1>
+          <h1 class="post-title" itemprop="name headline">机器学习笔记（3）理解分类</h1>
         
 
         <div class="post-meta">
@@ -619,6 +619,9 @@ Fig. 1. Comparison of the good projection and the bad projection in LDA
 <li>Benefits: Short training time.</li>
 <li>Shortcomings: Too many classifiers, large storing cost and long test time.</li>
 </ul>
+<h2 id="nearest-neighbor-classification"><a class="markdownIt-Anchor" href="#nearest-neighbor-classification"></a> Nearest Neighbor Classification</h2>
+<p>The basic idea of the nearest neighbor classification is: a new sample is classified by calculating the distance to the nearest training case; the sign of that point then determines the classification of the sample.</p>
+<p>The k-NN classifier extends this idea by taking the k nearest neighbors and assigning the sign of the majority. It is common to select k small and odd to break ties (typically 1, 3 or 5). Larger k values help reduce the effects of noisy points within the training data set, and the choice of k is often performed through cross-validation. KNN classifier is non-parametric, which means it does not make any assumptions on the underlying data distribution. The model structure is determined from the data. KNN is a good choice for a classification study when there is little or no prior knowledge about the distribution data. There is no explicit training phase for KNN. KNN makes predictions just-in-time by calculating the similarity between an input sample and each training instance. A sample is classified by a majority vote of its neighbors, with the sample being assigned to the class most common among its k nearest neighbors.</p>
 
       
     </div>
@@ -660,15 +663,15 @@ Fig. 1. Comparison of the good projection and the bad projection in LDA
       
         <div class="post-tags">
           
-            <a href="/blog/tags/Machine-Learning/" rel="tag"># Machine Learning</a>
+            <a href="/blog/tags/Machine-Learning/" rel="tag"><i class="fa fa-tag"></i> Machine Learning</a>
           
-            <a href="/blog/tags/Artificial-Intelligence/" rel="tag"># Artificial Intelligence</a>
+            <a href="/blog/tags/Artificial-Intelligence/" rel="tag"><i class="fa fa-tag"></i> Artificial Intelligence</a>
           
-            <a href="/blog/tags/Classification/" rel="tag"># Classification</a>
+            <a href="/blog/tags/Classification/" rel="tag"><i class="fa fa-tag"></i> Classification</a>
           
-            <a href="/blog/tags/Logistic-Regression/" rel="tag"># Logistic Regression</a>
+            <a href="/blog/tags/Logistic-Regression/" rel="tag"><i class="fa fa-tag"></i> Logistic Regression</a>
           
-            <a href="/blog/tags/LDA/" rel="tag"># LDA</a>
+            <a href="/blog/tags/LDA/" rel="tag"><i class="fa fa-tag"></i> LDA</a>
           
         </div>
       
@@ -681,8 +684,8 @@ Fig. 1. Comparison of the good projection and the bad projection in LDA
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/2018/03/06/machine-learning-2/" rel="next" title="机器学习笔记 (2)">
-                <i class="fa fa-chevron-left"></i> 机器学习笔记 (2)
+              <a href="/blog/2018/03/06/machine-learning-2/" rel="next" title="机器学习笔记（2）理解贝耶斯">
+                <i class="fa fa-chevron-left"></i> 机器学习笔记（2）理解贝耶斯
               </a>
             
           </div>
@@ -775,7 +778,7 @@ Fig. 1. Comparison of the good projection and the bad projection in LDA
               
                 <a href="/blog/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -786,7 +789,7 @@ Fig. 1. Comparison of the good projection and the bad projection in LDA
               
               <div class="site-state-item site-state-categories">
                 <a href="/blog/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -797,7 +800,7 @@ Fig. 1. Comparison of the good projection and the bad projection in LDA
               
               <div class="site-state-item site-state-tags">
                 <a href="/blog/tags/index.html">
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">23</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -830,7 +833,7 @@ Fig. 1. Comparison of the good projection and the bad projection in LDA
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#supervised-learning"><span class="nav-number">2.</span> <span class="nav-text"> Supervised Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#logistic-regression"><span class="nav-number">3.</span> <span class="nav-text"> Logistic Regression</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#gradient-ascent"><span class="nav-number">3.1.</span> <span class="nav-text"> Gradient ascent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#newtons-method-newton-raphson-method"><span class="nav-number">3.2.</span> <span class="nav-text"> Newton’s method (Newton-Raphson method)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linear-discriminant-analysis-lda"><span class="nav-number">4.</span> <span class="nav-text"> Linear discriminant analysis (LDA)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#algorithm-of-lda"><span class="nav-number">4.1.</span> <span class="nav-text"> Algorithm of LDA</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#two-class-cases"><span class="nav-number">4.1.1.</span> <span class="nav-text"> Two-class cases</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#multi-class-cases"><span class="nav-number">4.1.2.</span> <span class="nav-text"> Multi-class cases</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#one-vs-rest"><span class="nav-number">4.1.3.</span> <span class="nav-text"> One vs Rest</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#one-vs-one"><span class="nav-number">4.1.4.</span> <span class="nav-text"> One vs One</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#supervised-learning"><span class="nav-number">2.</span> <span class="nav-text"> Supervised Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#logistic-regression"><span class="nav-number">3.</span> <span class="nav-text"> Logistic Regression</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#gradient-ascent"><span class="nav-number">3.1.</span> <span class="nav-text"> Gradient ascent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#newtons-method-newton-raphson-method"><span class="nav-number">3.2.</span> <span class="nav-text"> Newton’s method (Newton-Raphson method)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linear-discriminant-analysis-lda"><span class="nav-number">4.</span> <span class="nav-text"> Linear discriminant analysis (LDA)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#algorithm-of-lda"><span class="nav-number">4.1.</span> <span class="nav-text"> Algorithm of LDA</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#two-class-cases"><span class="nav-number">4.1.1.</span> <span class="nav-text"> Two-class cases</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#multi-class-cases"><span class="nav-number">4.1.2.</span> <span class="nav-text"> Multi-class cases</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#one-vs-rest"><span class="nav-number">4.1.3.</span> <span class="nav-text"> One vs Rest</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#one-vs-one"><span class="nav-number">4.1.4.</span> <span class="nav-text"> One vs One</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nearest-neighbor-classification"><span class="nav-number">5.</span> <span class="nav-text"> Nearest Neighbor Classification</span></a></li></ol></div>
             
 
           </div>
