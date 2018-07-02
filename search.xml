@@ -3,13 +3,14 @@
   <entry>
     <title><![CDATA[Fundamentals of Computational Fluid Dynamics in OpenFOAM]]></title>
     <url>%2Fblog%2F2018%2F06%2F30%2FOpenFOAM-CFD%2F</url>
-    <content type="text"><![CDATA[Introduction OpenFOAM® is the leading free, open source software for computational fluid dynamics, and other computational science and engineering. Here is an short introduction of the fundamentals of Computational Fluid Dynamics (CFD) in OpenFOAM.]]></content>
+    <content type="text"><![CDATA[Introduction OpenFOAM® is the leading free, open source software for computational fluid dynamics (CFD), and other computational science and engineering. Here is a short introduction of the fundamentals of CFD in OpenFOAM. Most contents are based on two books, The OpenFOAM Technology Primer, and Getting Started with OpenFOAM® Technology. Finite Volume Method in OpenFOAM]]></content>
       <categories>
         <category>曹衣出水</category>
       </categories>
       <tags>
         <tag>CFD</tag>
         <tag>OpenFOAM</tag>
+        <tag>FVM</tag>
       </tags>
   </entry>
   <entry>
