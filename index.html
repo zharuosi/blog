@@ -439,9 +439,14 @@
         
           
             <h2 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h2>
-<p>OpenFOAM® is the leading free, open source software for computational fluid dynamics (CFD), and other computational science and engineering. Here is a short introduction of the fundamentals of CFD in OpenFOAM. Most contents are based on two books, <em>The OpenFOAM Technology Primer</em>, and<br>
+<p>OpenFOAM® is the leading free, open source software for computational fluid dynamics (CFD), and other computational science and engineering. Here is a short introduction of the fundamentals of CFD in OpenFOAM. Two books are recommended, <em>The OpenFOAM Technology Primer</em>, and<br>
 <em>Getting Started with OpenFOAM® Technology</em>.</p>
 <h2 id="finite-volume-method-in-openfoam"><a class="markdownIt-Anchor" href="#finite-volume-method-in-openfoam"></a> Finite Volume Method in OpenFOAM</h2>
+<h3 id="the-scalar-transport-equation"><a class="markdownIt-Anchor" href="#the-scalar-transport-equation"></a> The scalar transport equation</h3>
+<p>A mathematical model that describes a fluid flow is defined as a system of partial differential equations. In the model, the physical properties, e.g., pressure, velocity or temperature are dependent variables. The transport equation is used to describe the physical processes which change these properties in different way:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mrow><mi mathvariant="normal">∂</mi><mi>ϕ</mi></mrow><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac><mo>+</mo><mi mathvariant="normal">∇</mi><mo>⋅</mo><mo>(</mo><mover accent="true"><mrow><mi>U</mi></mrow><mo>⃗</mo></mover><mi>ϕ</mi><mo>)</mo><mo>+</mo><mi mathvariant="normal">∇</mi><mo>⋅</mo><mo>(</mo><mi>D</mi><mi mathvariant="normal">∇</mi><mi>ϕ</mi><mo>)</mo><mo>=</mo><msub><mi>S</mi><mrow><mi>ϕ</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\frac{\partial \phi}{\partial t} + \nabla \cdot (\vec{U} \phi) + \nabla \cdot (D \nabla \phi) = S_{\phi}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.37144em;"></span><span class="strut bottom" style="height:2.05744em;vertical-align:-0.686em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm" style="margin-right:0.05556em;">∂</span><span class="mord mathit">t</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathrm" style="margin-right:0.05556em;">∂</span><span class="mord mathit">ϕ</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mbin">+</span><span class="mord mathrm">∇</span><span class="mbin">⋅</span><span class="mopen">(</span><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord displaystyle textstyle cramped"><span class="mord mathit" style="margin-right:0.10903em;">U</span></span></span><span style="top:-0.25233em;margin-left:0.05556em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body accent-vec"><span>⃗</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathit">ϕ</span><span class="mclose">)</span><span class="mbin">+</span><span class="mord mathrm">∇</span><span class="mbin">⋅</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathrm">∇</span><span class="mord mathit">ϕ</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">ϕ</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></p>
+<p>where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">ϕ</span></span></span></span> is the scalar property, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>U</mi></mrow><mo>⃗</mo></mover></mrow><annotation encoding="application/x-tex">\vec{U}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.9667699999999999em;"></span><span class="strut bottom" style="height:0.9667699999999999em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.10903em;">U</span></span></span><span style="top:-0.25233em;margin-left:0.05556em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body accent-vec"><span>⃗</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> is the velocity vector, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">D</span></span></span></span> is the diffusion coefficient. Three terms in the left side represent temporal term, convective term and diffusive</p>
 
           
         
@@ -587,7 +592,7 @@
 <p>从1995年10月4日到1996年3月27日，东京电视台首次播放了一部动画，共26话，在日本引起了轰动和争议。尽管神作层出不穷，至今它仍被众多爱好者认为是最伟大的动漫作品，常被视为日本动画历史上的里程碑。这部作品就是
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/blog/2018/06/17/melody-eva/#more" rel="contents">
+            <a class="btn" href="/blog/2018/06/17/melody-eva/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -742,7 +747,7 @@
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10764em;">f</span></span></span></span> is such a function, that maps the values above a threshold to the first class and other values to the second class, or give the probability. <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>w</mi></mrow><mo>⃗</mo></mover></mrow><annotation encoding="application/x-tex">\vec{w}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.71444em;"></span><span class="strut bottom" style="height:0.71444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.02691em;">w</span></span></span><span style="top:0em;margin-left:0.16668em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body accent-vec"><span>⃗</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> is a vector of weights, which can be learned from a set of labeled samples. There are two classes of methods for determining the parameters of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>w</mi></mrow><mo>⃗</mo></mover></mrow><annotation encoding="application/x-tex">\vec{w}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.71444em;"></span><span class="strut bottom" style="height:0.71444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.02691em;">w</span></span></span><span style="top:0em;margin-left:0.16668em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body accent-vec"><span>⃗</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>:</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/blog/2018/06/09/machine-learning-5/#more" rel="contents">
+            <a class="btn" href="/blog/2018/06/09/machine-learning-5/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -891,7 +896,7 @@
 <p>注意，
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/blog/2018/06/07/introduction-to-premiere/#more" rel="contents">
+            <a class="btn" href="/blog/2018/06/07/introduction-to-premiere/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1040,7 +1045,7 @@
 <p>来看Webster’s Dictionary韦氏词典上Enterprise的解释：</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/blog/2018/05/12/CV-Enterprise/#more" rel="contents">
+            <a class="btn" href="/blog/2018/05/12/CV-Enterprise/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1189,7 +1194,7 @@
 <p>If you flip a coin, what’s the probability it will fall with the head up? To solve this problem, you may flip the coin many times.
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/blog/2018/05/02/machine-learning-4/#more" rel="contents">
+            <a class="btn" href="/blog/2018/05/02/machine-learning-4/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1337,7 +1342,7 @@
 <p>不过今天不讲葡萄酒，本文讲的是二战期间美国海军的故事。</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/blog/2018/04/18/DD-Laffey/#more" rel="contents">
+            <a class="btn" href="/blog/2018/04/18/DD-Laffey/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1486,7 +1491,7 @@
 <h2 id="geometry"><a class="markdownIt-Anchor" href="#geometry"></a> Geometry</h2>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/blog/2018/04/06/propeller-concepts/#more" rel="contents">
+            <a class="btn" href="/blog/2018/04/06/propeller-concepts/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1633,7 +1638,7 @@
 <p>雪风是旧日本帝国在二战期间建造的一艘驱逐舰。她的一生充满传奇，作为战败国的一艘普通的驱逐舰，历经太平洋上大大小小超过十六次的海战而没有沉没，几无受损，被称作“奇跡の駆逐艦”、“呉の雪風 佐世保の時雨”、“不沈の航迹”等。关于雪风的文献很多：《激動の昭和 : 世界奇跡の駆逐艦 : 雪風》、《强运駆逐舰栄光の生涯》、《駆逐艦雪風―誇り高き不沈艦の生涯》等。 本文要讲的雪风的故事，从1938年开始，到1971年结束。</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/blog/2018/03/25/DD-Yukikaze/#more" rel="contents">
+            <a class="btn" href="/blog/2018/03/25/DD-Yukikaze/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1782,7 +1787,7 @@
 <p>In supervised learning, each example is a pair consisting of an input object (typically a vector) and a desired output value (also called the supervisory signal), like SVM, regression, decision trees, naive Bayes, etc. Classification means the output takes discrete values. Three common classification methods are Logistic Regression, Fisher Linear Discriminant Analysis and Nearest Neighbor Classification.</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/blog/2018/03/15/machine-learning-3/#more" rel="contents">
+            <a class="btn" href="/blog/2018/03/15/machine-learning-3/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
