@@ -1,7 +1,7 @@
 ---
 title: 雪风的故事
 date: 2018-03-25 15:21:24
-categories: 考据篇之紫电青霜
+categories: 故事
 tags: Navy
 ---
 

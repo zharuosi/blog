@@ -1,7 +1,7 @@
 ---
 title: 理解螺旋桨
 date: 2018-04-06 23:10:26
-categories: 工技篇之曹衣出水
+categories: 曹衣出水
 tags: [Principle of Naval Architecture,Marine Hydrodynamics,Propulsion,Propeller]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 机器学习笔记（1）常识
 date: 2018-02-28 23:48:48
-categories: 笔记篇之夙兴夜寐
+categories: 笔记
 tags: [Machine Learning,Artificial Intelligence]
 ---
 

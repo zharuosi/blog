@@ -1,7 +1,7 @@
 ---
 title: 机器学习笔记（3）理解分类
 date: 2018-03-15 23:00:30
-categories: 笔记篇之夙兴夜寐
+categories: 笔记
 tags: [Machine Learning,Artificial Intelligence,Classification,Logistic Regression,LDA]
 ---
 

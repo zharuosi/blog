@@ -1,7 +1,7 @@
 ---
 title: SSH免密码登录
 date: 2018-02-07 22:35:15
-categories: 工技篇之吴带当风
+categories: 吴带当风
 tags: Linux
 ---
 
@@ -11,7 +11,7 @@ tags: Linux
 
 首先简单介绍一下什么是[SSH(Secure Shell)](https://en.wikipedia.org/wiki/Secure_Shell)。
 
-SSH是一个用于计算机间的远程登录会话和其他网络服务的加密网络安全协议，由互联网工程任务组 IETF(Internet Engineering Task Force)的网络工作小組（Network Working Group）所制定。相对于传统的网络服务，如FTP、 POP等， SSH协议避免了使用明文传输数据，帐号和口令，可以有效防止信息泄漏和中间人攻击，也能够防止DNS欺骗和IP欺骗。其具体工作原理本文不作详述。
+SSH是一个用于计算机间的远程登录会话和其他网络服务的加密网络安全协议，由互联网工程任务组 IETF（Internet Engineering Task Force）的网络工作小組（Network Working Group）所制定。相对于传统的网络服务，如FTP、 POP等， SSH协议避免了使用明文传输数据，帐号和口令，可以有效防止信息泄漏和中间人攻击，也能够防止DNS欺骗和IP欺骗。其具体工作原理本文不作详述。
 
 ## 使用SSH登录远程主机
 
@@ -92,4 +92,4 @@ $ chmod 600 ~/.ssh/authorized_keys
 $ chmod 700 ~/.ssh
 ```
 
-- 完成后即可不输入密码直接登录。 
+- 完成后即可不输入密码直接登录。Enjoy it! 

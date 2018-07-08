@@ -1,7 +1,7 @@
 ---
 title: 拉菲的故事
 date: 2018-04-18 22:35:52
-categories: 考据篇之紫电青霜
+categories: 故事
 tags: Navy
 ---
 

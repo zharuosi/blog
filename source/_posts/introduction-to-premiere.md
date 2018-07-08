@@ -1,7 +1,7 @@
 ---
 title: Adobe Premiere视频剪辑入门
 date: 2018-06-07 22:01:38
-categories: 工技篇之吴带当风
+categories: 吴带当风
 tags: [Post Processing,Video Editing,Premiere]
 ---
 

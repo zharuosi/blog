@@ -1,7 +1,7 @@
 ---
 title: 企业的故事
 date: 2018-05-12 23:46:58
-categories: 考据篇之紫电青霜
+categories: 故事
 tags: Navy
 ---
 

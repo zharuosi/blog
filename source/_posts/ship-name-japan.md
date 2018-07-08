@@ -1,7 +1,7 @@
 ---
 title: 日本海军舰艇命名
 date: 2018-02-14 20:21:24
-categories: 考据篇之木雁之间
+categories: 木雁之间
 tags: Navy
 ---
 
