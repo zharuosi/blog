@@ -41,7 +41,9 @@ Generative algorithms are suitable for unsupervised learning. Discriminative mod
 In the case of support vector machines, a data point is viewed as a $p$-dimensional vector (a list of $p$ numbers). The points was supposed to separated by a $p-1$ dimensional hyperplane. Many hyperplanes exists. The best choice is the one that represents the largest margin between the two classes, which is known as the maximum-margin hyperplane. This classifier is also called as a maximum margin classifier. 
 
 The equation of a hyperplane can be written as:
-$$\omega^T x + b =0 $$
+$$ \omega^T x + b = 0 $$
+Note that $\omega^T x = \vec{\omega}\cdot \vec{x}$.
+
 Two classes can be determined by:
 
 - $f(x) = \omega^T x + b > 0$ leads to $y = 1$
@@ -60,10 +62,19 @@ The result would be positive for properly classified points and negative otherwi
 
 The geometrical margin is defined as:
 $$ \tilde{\gamma} = y\gamma = y \cdot \frac{\omega^T x + b}{|| \omega ||} = \frac{\hat{\gamma}}{|| \omega ||}$$
-where $omega$ is the normal vector of the hyper plane. Here $|| \omega ||$ is the Euclidean norm (2-norm), gives the ordinary distance from the origin to the point $\omega$.
+where $\omega$ is the normal vector of the hyper plane. Here $|| \omega ||$ is the Euclidean norm (2-norm), gives the ordinary distance from the origin to the point $\omega$.
+
+The margin in maximum margin classifier refers to the geometrical margin. Samples on the margin are called the support vectors.
+
+<img src="https://en.wikipedia.org/wiki/Support_vector_machine#/media/File:Svm_max_sep_hyperplane_with_margin.png" width="75%" height="75%">
+
+If the training data is linearly separable, two parallel hyperplanes can be selected to separate the two classes of data so that the distance between them (called margin) is as large as possible. After normalized or standardized, these hyperplanes are:
+- label 1: $\omega^T x + b = 1$
+- label -1: $\omega^T x + b = -1$
 
 
 
 
 
 
+ 
