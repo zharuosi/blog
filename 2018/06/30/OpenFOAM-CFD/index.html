@@ -126,7 +126,7 @@
 <meta property="og:site_name" content="Of Course I Still Love You">
 <meta property="og:description" content="Introduction OpenFOAM® is the leading free, open source software for computational fluid dynamics (CFD), and other computational science and engineering. Here is a short introduction of the fundament">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-11T02:19:54.705Z">
+<meta property="og:updated_time" content="2018-07-13T01:52:18.527Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fundamentals of Computational Fluid Dynamics in OpenFOAM">
 <meta name="twitter:description" content="Introduction OpenFOAM® is the leading free, open source software for computational fluid dynamics (CFD), and other computational science and engineering. Here is a short introduction of the fundament">
@@ -469,7 +469,9 @@ the mathematical model by solving a system of algebraic equations.</p>
 <h3 id="indirect-addressing"><a class="markdownIt-Anchor" href="#indirect-addressing"></a> Indirect addressing</h3>
 <p>The cells and faces of the mesh are defined as sets of indirected indexes to mesh points. The face is defined by the indices of its points, rather than by its points directly. For example, a hexahedral cell is addressed by faces 1 to faces 6 without storing any point related data directly. Otherwise dealing with the mesh information could lead to multiple copies of the same points and faces in memory.</p>
 <h3 id="owner-neighbour-addressing"><a class="markdownIt-Anchor" href="#owner-neighbour-addressing"></a> Owner-neighbour addressing</h3>
-<p>is an optimation which defines the way that the indices in the mesh faces are ordered by using the direction of normal vector of the face.</p>
+<p>Owner-neighbour addressing optimization defines the way that the indices in the mesh faces are ordered by using the direction of normal vector of the face. Two global lists are introduced: the face-owner and ther face-neighbour list. The owner cell of a face is the cell with a lower index in the list of mesh cells. The face area normal vector is directed from the owner into the neighbour cell.</p>
+<h3 id="boundary-mesh-addressing"><a class="markdownIt-Anchor" href="#boundary-mesh-addressing"></a> Boundary mesh addressing</h3>
+<p>Boundary addressing optimization isolates the boundary faces and stores them at the end of the list of mesh faces. The boundary mesh is defined as a set of patches for different interpretation. All the faces of the boundary mesh are directed outwards from the flow domain. They have only a cell owner and no neighbour.</p>
 
       
     </div>
@@ -673,7 +675,7 @@ the mathematical model by solving a system of algebraic equations.</p>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-scalar-transport-equation"><span class="nav-number">2.</span> <span class="nav-text"> The scalar transport equation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#domain-discretization"><span class="nav-number">3.</span> <span class="nav-text"> Domain discretization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#element-addressing"><span class="nav-number">4.</span> <span class="nav-text"> Element addressing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#indirect-addressing"><span class="nav-number">4.1.</span> <span class="nav-text"> Indirect addressing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#owner-neighbour-addressing"><span class="nav-number">4.2.</span> <span class="nav-text"> Owner-neighbour addressing</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#the-scalar-transport-equation"><span class="nav-number">2.</span> <span class="nav-text"> The scalar transport equation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#domain-discretization"><span class="nav-number">3.</span> <span class="nav-text"> Domain discretization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#element-addressing"><span class="nav-number">4.</span> <span class="nav-text"> Element addressing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#indirect-addressing"><span class="nav-number">4.1.</span> <span class="nav-text"> Indirect addressing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#owner-neighbour-addressing"><span class="nav-number">4.2.</span> <span class="nav-text"> Owner-neighbour addressing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#boundary-mesh-addressing"><span class="nav-number">4.3.</span> <span class="nav-text"> Boundary mesh addressing</span></a></li></ol></li></ol></div>
             
 
           </div>
