@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zharuosi.github.io/blog/2018/05/12/CV-Enterprise/</loc>
+    
+    <lastmod>2018-08-06T02:18:25.640Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/2018/07/17/weapon-name-China/</loc>
+    
+    <lastmod>2018-08-06T02:18:25.640Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zharuosi.github.io/blog/2018/06/30/OpenFOAM-CFD/</loc>
     
-    <lastmod>2018-08-03T01:53:59.870Z</lastmod>
+    <lastmod>2018-08-06T02:18:25.636Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/2018/06/09/machine-learning-5/</loc>
+    
+    <lastmod>2018-08-06T02:18:25.636Z</lastmod>
     
   </url>
   
@@ -12,27 +33,6 @@
     <loc>https://zharuosi.github.io/blog/about/index.html</loc>
     
     <lastmod>2018-08-02T23:18:00.352Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2018/05/12/CV-Enterprise/</loc>
-    
-    <lastmod>2018-08-02T00:43:24.498Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2018/07/17/weapon-name-China/</loc>
-    
-    <lastmod>2018-08-02T00:43:24.498Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2018/06/09/machine-learning-5/</loc>
-    
-    <lastmod>2018-08-02T00:43:24.498Z</lastmod>
     
   </url>
   
