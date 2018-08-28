@@ -1,5 +1,5 @@
 ---
-title: 机器学习笔记（3）理解分类
+title: 机器学习笔记（3）常见分类
 date: 2018-03-15 23:00:30
 categories: 笔记
 tags: [Machine Learning,Artificial Intelligence,Classification,Logistic Regression,LDA]

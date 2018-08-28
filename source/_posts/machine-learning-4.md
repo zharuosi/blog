@@ -1,5 +1,5 @@
 ---
-title: 机器学习笔记（4）理解贝耶斯
+title: 机器学习笔记（4）贝耶斯分类
 date: 2018-05-02 07:54:54
 categories: 笔记
 tags: [Machine Learning,Artificial Intelligence,Bayesian Learning,Maximum Likelihood Estimation,Bayes Optimal Classifier,Naive Bayes]
