@@ -2,51 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zharuosi.github.io/blog/2018/03/06/machine-learning-2/</loc>
+    
+    <lastmod>2018-08-28T03:27:52.241Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zharuosi.github.io/blog/2018/05/02/machine-learning-4/</loc>
     
-    <lastmod>2018-08-28T00:41:16.137Z</lastmod>
+    <lastmod>2018-08-28T03:27:52.241Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zharuosi.github.io/blog/2018/03/15/machine-learning-3/</loc>
     
-    <lastmod>2018-08-28T00:41:16.137Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2018/07/17/weapon-name-China/</loc>
-    
-    <lastmod>2018-08-28T00:41:16.133Z</lastmod>
+    <lastmod>2018-08-28T03:27:52.241Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zharuosi.github.io/blog/2018/05/12/CV-Enterprise/</loc>
     
-    <lastmod>2018-08-28T00:41:16.133Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2018/06/09/machine-learning-5/</loc>
-    
-    <lastmod>2018-08-28T00:41:16.133Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2018/03/06/machine-learning-2/</loc>
-    
-    <lastmod>2018-08-28T00:41:16.133Z</lastmod>
+    <lastmod>2018-08-28T03:27:52.241Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zharuosi.github.io/blog/2018/06/30/OpenFOAM-CFD/</loc>
     
-    <lastmod>2018-08-28T00:41:16.133Z</lastmod>
+    <lastmod>2018-08-28T03:27:52.237Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/2018/07/17/weapon-name-China/</loc>
+    
+    <lastmod>2018-08-28T03:27:52.237Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/2018/06/09/machine-learning-5/</loc>
+    
+    <lastmod>2018-08-28T03:27:52.237Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/2018/03/25/DD-Yukikaze/</loc>
+    
+    <lastmod>2018-08-28T01:25:06.658Z</lastmod>
     
   </url>
   
@@ -82,13 +89,6 @@
     <loc>https://zharuosi.github.io/blog/2018/02/01/hello-world/</loc>
     
     <lastmod>2018-07-02T02:25:56.465Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2018/03/25/DD-Yukikaze/</loc>
-    
-    <lastmod>2018-07-02T02:25:55.873Z</lastmod>
     
   </url>
   
