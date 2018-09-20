@@ -344,6 +344,165 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zharuosi.github.io/blog/blog/2018/09/18/shell-script/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ruosi Zha">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Of Course I Still Love You">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/2018/09/18/shell-script/" itemprop="url">Writing shell scripts</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-18T23:57:02-02:30">
+                2018-09-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/吴带当风/" itemprop="url" rel="index">
+                    <span itemprop="name">吴带当风</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h2>
+<p>Shell scripting makes life more comfortable. The command sequences of Linux can be comblined in one shell script and be executed automatively without wasting any time. Fpr example, if you would like to rename 9,999,999 files and put them into different directories during one week, clicking the mouse will be devastating. By shell scripting, one command in a loop can make it. After that, you can have a vacation and enjoy coeffee in the next seven days.</p>
+<p>Suppose we have known at aleast a little bit about Linux. What is a Linux shell? Shell is an command language interpreter that executes commands. The most commonly used shells are SH (Bourne SHell) and Bash (Bourne again shell), released in 1989. Bash is not a perfect scripting language, but it is very useful. Life is short, get rid of the mouse.</p>
+<h2 id="shell-scripting-basics"><a class="markdownIt-Anchor" href="#shell-scripting-basics"></a> Shell Scripting Basics</h2>
+<p>Here are some examples and templates of the shell scripting to take care of the files and directories.</p>
+<pre><code># reading the content of file1 and the output is written to file2 (instead of being displayed on screen)
+cat file1 &gt; file2
+
+# reading the content of file1 and the output is added to the end of file2
+cat file1 &gt;&gt; file2
+
+# concatenation and alphabetize (from a to z or from 1 to infinite) the lines of text after concatenation
+cat file1 file2 file3 | sort &gt; file4
+</code></pre>
+<h2 id="run-a-shell-script"><a class="markdownIt-Anchor" href="#run-a-shell-script"></a> Run a shell script</h2>
+<p>Set the execute permission on your script:</p>
+<pre><code>chmod u+x yourname.sh
+</code></pre>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://zharuosi.github.io/blog/blog/2018/09/01/elision-pronunciation/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1679,155 +1838,6 @@ of living languages, and deletion is often used in historical linguistics for a 
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zharuosi.github.io/blog/blog/2018/04/06/propeller-concepts/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ruosi Zha">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Of Course I Still Love You">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/2018/04/06/propeller-concepts/" itemprop="url">理解螺旋桨</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-06T23:10:26-02:30">
-                2018-04-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/曹衣出水/" itemprop="url" rel="index">
-                    <span itemprop="name">曹衣出水</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h2>
-<img src="https://raw.githubusercontent.com/zharuosi/blog/source/source/images/propeller-screw-icons-vector-16504568.jpg" width="50%" height="50%">
-<p>螺旋桨是一种常见的推进装置，一般由桨毂和桨叶组成。在空气中旋转的螺旋桨可以为飞机提供动力，在水里旋转的螺旋桨可以推动船舶前进。本文介绍螺旋桨设计中的基本概念和流体力学原理。</p>
-<h2 id="geometry"><a class="markdownIt-Anchor" href="#geometry"></a> Geometry</h2>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/2018/04/06/propeller-concepts/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1883,7 +1893,7 @@ of living languages, and deletion is often used in historical linguistics for a 
               
                 <a href="/blog/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
