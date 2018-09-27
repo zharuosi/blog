@@ -126,7 +126,7 @@
 <meta property="og:site_name" content="Of Course I Still Love You">
 <meta property="og:description" content="Introduction Shell scripting makes life more comfortable. The command sequences of Linux can be comblined in one shell script and be executed automatively without wasting any time. For example, if yo">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-26T19:15:42.421Z">
+<meta property="og:updated_time" content="2018-09-27T22:51:33.329Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Writing shell scripts">
 <meta name="twitter:description" content="Introduction Shell scripting makes life more comfortable. The command sequences of Linux can be comblined in one shell script and be executed automatively without wasting any time. For example, if yo">
@@ -472,11 +472,23 @@ grep &quot;money*&quot; filename -n
 # search for a special file without a character, e.g. we have a@0.sim, a@1.sim, a.sim
 ls ./*.sim | grep -v @
 
-# Displaying all currently running processes (-f is equal to -A) / show details / certain process / by certain user
+# displaying all currently running processes (-f is equal to -A) / show details / certain process / by certain user
 ps -A
 ps -aux
 ps -ef | grep &quot;firefox&quot;
 ps -u root
+
+# conditional statement used to examine a status of a file
+if [ ! -f &quot;$myFile&quot; ]; then
+touch &quot;$myFile&quot;
+fi
+# -a file 	Returns true if file exists (or -e)
+# -d file 	Returns true if file exists and is a directory
+# -s file 	Returns true if file exists and has a greater size that zero
+# -r file 	Returns true if file exists and is readable
+# -w file 	Returns true if file exists and is writable
+# -x file 	Returns true if file exists and is executable
+# -N file 	Returns true if the file exists and has been modified since it was last read
 </code></pre>
 <h2 id="file-handling-primer"><a class="markdownIt-Anchor" href="#file-handling-primer"></a> File Handling Primer</h2>
 <h3 id="example-1-delete-replace-grep"><a class="markdownIt-Anchor" href="#example-1-delete-replace-grep"></a> Example 1: delete, replace, grep…</h3>
