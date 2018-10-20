@@ -468,11 +468,18 @@ $ convert  -resize 50%x100% src.png dst.eps
 <pre><code>$ convert -fill black -pointsize 60 -font Times -draw 'text 100,800 &quot;NAOE&quot; ‘ src.png dst.png
 </code></pre>
 <p>However, the -destiny will lead to as large as hundreds of MB for one image. To solve this problem, we use a pdf file as a temporary file.</p>
-<pre><code>$ convert  -density 300 -resize 1920×1080 src.png dst.pdf &amp;&amp; pdftops -eps dst.pdf
+<pre><code>$ convert -density 300 -resize 1920×1080 src.png dst.pdf &amp;&amp; pdftops -eps dst.pdf
 </code></pre>
 <p>The output file is not large and clear enough.</p>
 <h2 id="an-example"><a class="markdownIt-Anchor" href="#an-example"></a> An example</h2>
 <p>Here is a shell script for you. It can convert all the png files in the current directory to EPS files. The original images are not removed.</p>
+<pre><code>for origin_image in `ls *.png`
+do
+    file_name = $(basename $origin_image .png)
+    convert -density 300 -resize 1920×1080 $file_name.png $file_name.pdf
+    pdftops -eps $file_name.pdf
+done
+</code></pre>
 <p>Enjoy it.</p>
 
           
