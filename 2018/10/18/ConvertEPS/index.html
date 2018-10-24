@@ -126,7 +126,7 @@
 <meta property="og:site_name" content="Of Course I Still Love You">
 <meta property="og:description" content="Introduction .eps is a common used format of images in academic writting by LatexLatexLatex. If you want to convert hundreds of .jpg or .png. formats to .eps, the command convert in Linux system prov">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-20T02:36:16.849Z">
+<meta property="og:updated_time" content="2018-10-24T02:02:30.035Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Convert images to EPS format">
 <meta name="twitter:description" content="Introduction .eps is a common used format of images in academic writting by LatexLatexLatex. If you want to convert hundreds of .jpg or .png. formats to .eps, the command convert in Linux system prov">
@@ -473,6 +473,12 @@ $ convert  -resize 50%x100% src.png dst.eps
 <pre><code>$ convert -density 300 -resize 1920×1080 src.png dst.pdf &amp;&amp; pdftops -eps dst.pdf
 </code></pre>
 <p>The output file is not large and clear enough.</p>
+<h2 id="error-during-converting"><a class="markdownIt-Anchor" href="#error-during-converting"></a> Error during converting</h2>
+<p>When you first use conert src.png dst.pdf, maybe the error message occurs:</p>
+<pre><code>convert: not authorized `pictures.pdf' @ error/constitute.c/WriteImage/1028
+</code></pre>
+<p>As a temporary fix, you can edit <strong>/etc/ImageMagick-6/policy.xml</strong> and change the PDF rights from <strong>none</strong> to <strong>read|write</strong> there.</p>
+<p><a href="https://askubuntu.com/questions/1081695/error-during-converting-jpg-to-pdf" target="_blank" rel="noopener">[Reference]</a></p>
 <h2 id="an-example"><a class="markdownIt-Anchor" href="#an-example"></a> An example</h2>
 <p>Here is a shell script for you. It can convert all the png files in the current directory to EPS files. The original images are not removed.</p>
 <pre><code>for origin_image in `ls *.png`
@@ -682,7 +688,7 @@ done
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#imagemagick"><span class="nav-number">2.</span> <span class="nav-text"> ImageMagick</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#convert"><span class="nav-number">3.</span> <span class="nav-text"> Convert</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#an-example"><span class="nav-number">4.</span> <span class="nav-text"> An example</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#imagemagick"><span class="nav-number">2.</span> <span class="nav-text"> ImageMagick</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#convert"><span class="nav-number">3.</span> <span class="nav-text"> Convert</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#error-during-converting"><span class="nav-number">4.</span> <span class="nav-text"> Error during converting</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#an-example"><span class="nav-number">5.</span> <span class="nav-text"> An example</span></a></li></ol></div>
             
 
           </div>
