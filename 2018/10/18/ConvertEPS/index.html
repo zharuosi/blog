@@ -126,7 +126,7 @@
 <meta property="og:site_name" content="Of Course I Still Love You">
 <meta property="og:description" content="Introduction .eps is a common used format of images in academic writting by LatexLatexLatex. If you want to convert hundreds of .jpg or .png. formats to .eps, the command convert in Linux system prov">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-24T02:02:30.035Z">
+<meta property="og:updated_time" content="2018-10-25T02:27:13.713Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Convert images to EPS format">
 <meta name="twitter:description" content="Introduction .eps is a common used format of images in academic writting by LatexLatexLatex. If you want to convert hundreds of .jpg or .png. formats to .eps, the command convert in Linux system prov">
@@ -442,6 +442,7 @@
         <h2 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h2>
 <p>.eps is a common used format of images in academic writting by <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Latex</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">L</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mord mathit">x</span></span></span></span>. If you want to convert hundreds of .jpg or .png. formats to .eps, the command <em>convert</em> in Linux system provides a good solution.</p>
 <h2 id="imagemagick"><a class="markdownIt-Anchor" href="#imagemagick"></a> ImageMagick</h2>
+<a id="more"></a>
 <p>The command <em>convert</em> is a tool from the tool ImageMagick, includes a number of command-line utilities for manipulating images. Please install it if <em>convert</em> is not found.</p>
 <p>Another utility from is <em>identify</em>. It can output the size and other information of the interested image, e.g.,</p>
 <pre><code>identify Behdinan1998.png
@@ -479,6 +480,8 @@ $ convert  -resize 50%x100% src.png dst.eps
 </code></pre>
 <p>As a temporary fix, you can edit <strong>/etc/ImageMagick-6/policy.xml</strong> and change the PDF rights from <strong>none</strong> to <strong>read|write</strong> there.</p>
 <p><a href="https://askubuntu.com/questions/1081695/error-during-converting-jpg-to-pdf" target="_blank" rel="noopener">[Reference]</a></p>
+<pre><code>The EPS file can not be converted to PNG using this tool. Please tell me if you know how.
+</code></pre>
 <h2 id="an-example"><a class="markdownIt-Anchor" href="#an-example"></a> An example</h2>
 <p>Here is a shell script for you. It can convert all the png files in the current directory to EPS files. The original images are not removed.</p>
 <pre><code>for origin_image in `ls *.png`
