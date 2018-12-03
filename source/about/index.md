@@ -1,9 +1,9 @@
 ---
-title: About 
+title: About
 date: 2018-02-12 20:22:20
 ---
 
-<img src="https://68.media.tumblr.com/3045c56be9e9545b524d5481df7da0e8/tumblr_o30u5rDNMx1v0d28no1_1280.jpg" width="55%" height="55%">
+<img src="https://raw.githubusercontent.com/zharuosi/2017-2018/master/X2018/1525782346096c78dbb4fa2.gif?token=AFkaDBuX3JtrRyu9sFhdgJod8yOaEhSqks5cDq4EwA%3D%3D" width="55%" height="55%">
 
 古之所谓豪杰之士者，必有过人之节。人情有所不能忍者，匹夫见辱，拔剑而起，挺身而斗，此不足为勇也。天下有大勇者，卒然临之而不惊，无故加之而不怒，此其所挟持者甚大，而其志甚远也。
 

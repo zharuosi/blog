@@ -7,9 +7,7 @@ tags: Navy
 
 ## 引言
 
-<img src="https://pre00.deviantart.net/b38c/th/pre/f/2014/204/6/e/enterprise_legacy_1_tech_readout__new__by_unusualsuspex-d7ro9b2.jpg" width="75%" height="75%">
-
-企业（Enterprise）可能是历史上最传奇的一个名字了，除了英法，仅美国共有多达9艘军舰和1架航天飞机以“Enterprise”命名，甚至星际迷航里的联邦星舰NCC-1701A也是。初次印象可能有些奇怪，为什么拿这么一个毫无特色的名词来给这么多舰船命名呢？其实，这是翻译的问题。本文就先从Enterprise的含义说起。
+企业（Enterprise）号可能是历史上最传奇的一个名字了，除了英法，仅美国共有多达9艘军舰和1架航天飞机以“Enterprise”命名，甚至星际迷航里的联邦星舰NCC-1701A也是。初次印象可能有些奇怪，为什么一个毫无特色的名词这么流行呢？其实，这是翻译的问题。本文就先从Enterprise的含义说起。
 
 来看Webster's Dictionary韦氏词典上Enterprise的解释：
 <!-- more -->
@@ -18,7 +16,9 @@ tags: Navy
 - a unit of economic organization or activity, especially: a business organization
 - readiness to engage in daring or difficult action
 
-可以看到Enterprise有三层意思：第一，可以表示艰难、复杂、冒险的计划或项目。第二是企业的意思。第三，表示对艰巨的行动做好准备、充满信心、雄心勃勃，意译也就是进取、事业心、探险精神的意思。所以命名为Enterprise的本意是“进取”。例如，开头提到的航天飞机Space Shuttle OV-101也叫Enterprise，一般翻译成进取号。不过因为约定俗成,大家都统一叫企业了。
+可以看到Enterprise有三层意思：第一，可以表示艰难、复杂、冒险的计划或项目。第二是常见的企业的意思。第三，表示对艰巨的行动做好准备、充满信心、雄心勃勃，意译也就是进取、事业心、探险精神的意思。所以命名为Enterprise的本意是“进取”。例如，开头提到的航天飞机Space Shuttle OV-101也叫Enterprise，一般翻译成进取号。不过因为约定俗成,大家都统一叫企业了。
+
+<img src="https://pre00.deviantart.net/b38c/th/pre/f/2014/204/6/e/enterprise_legacy_1_tech_readout__new__by_unusualsuspex-d7ro9b2.jpg" width="75%" height="75%">
 
 限于篇幅，本文主要介绍美国的第七艘和第八艘企业：分别是二战期间的航空母舰CV-6和现代航空母舰CVN-65。其中，CV-6在二战中表现极为突出，被美国人亲切地称为"大E"（The Big E）和"幸运E"（Lucky E）。由于日本曾多次单方面宣称企业被击沉，后来却又总是在战斗中遇见，所以也被日本人称为“灰色幽灵”（The Grey Ghost）。CVN-65则是全世界第一艘核动力航空母舰，上世纪六十年代的产物，至今仍远远领先于绝大多数国家。
 

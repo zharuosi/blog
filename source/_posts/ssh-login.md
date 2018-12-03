@@ -1,5 +1,5 @@
 ---
-title: SSH免密码登录
+title: SSH login without password
 date: 2018-02-07 22:35:15
 categories: 吴带当风
 tags: Linux

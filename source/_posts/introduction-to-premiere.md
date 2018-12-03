@@ -1,5 +1,5 @@
 ---
-title: Adobe Premiere视频剪辑入门
+title: Adobe Premiere -- Introduction to video editing
 date: 2018-06-07 22:01:38
 categories: 吴带当风
 tags: [Post Processing,Video Editing,Premiere]

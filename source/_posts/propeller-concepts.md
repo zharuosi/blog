@@ -1,5 +1,5 @@
 ---
-title: 理解螺旋桨
+title: Propeller geometry and performance
 date: 2018-04-06 23:10:26
 categories: 曹衣出水
 tags: [Principle of Naval Architecture,Marine Hydrodynamics,Propulsion,Propeller]
@@ -9,7 +9,7 @@ tags: [Principle of Naval Architecture,Marine Hydrodynamics,Propulsion,Propeller
 
 <img src="https://raw.githubusercontent.com/zharuosi/blog/source/source/images/propeller-screw-icons-vector-16504568.jpg" width="50%" height="50%">
 
-螺旋桨是一种常见的推进装置，一般由桨毂和桨叶组成。在空气中旋转的螺旋桨可以为飞机提供动力，在水里旋转的螺旋桨可以推动船舶前进。本文介绍螺旋桨设计中的基本概念和流体力学原理。
+A propeller is a part of propulsion system that transmits power by converting rotational motion into thrust, based on Bernoulli's principle. The most common propeller is called the screw propeller, with fixed helical blades rotating around a shaft. The first screw propeller in the world was invented in 1835, by John Ericsson and Francis Pettit Smith. Propellers can be used in marine ships, aircrafts, etc. The basic concepts and priciples in marine propulsion are introduced in this blog.
 
 ## Geometry
 <!-- more -->
