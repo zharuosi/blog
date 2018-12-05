@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Boundary layer theory]]></title>
+    <url>%2Fblog%2F2018%2F12%2F04%2FBoundary-Layer%2F</url>
+    <content type="text"><![CDATA[Introduction A boundary layer refers to the layer of fluid in the immediate vicinity of a bounding surface where the effects of viscosity are significant [1]. Proposed by Ludwig Prandtl, the flow past a body can be divided into two regions: a very thin layer close to the body (boundary layer) where the viscosity is important, and the remaining region outside this layer where the viscosity can be neglected [2]. Since the inviscid flow solution does not satisfy the no-slip condition at the wall, boundary-layer theory is called a singular perturbation method. The transition from laminar to turbulent flow was first examined in pipe flow by O. Reynolds (1883). Prandtl’s comprehensive contribution appeared in Aerodynamic Theory, edited by W.F. Durand, L. Prandtl (1935). A separation of the boundary layer from the body and the formation of large or small eddies at the back of the body can then occur. This kind of separation could be detrimental. General concept Laminar flow: At Reynolds numbers below the critical Reynolds number, layers of fluid move with different velocities without great exchange of fluid particles perpendicular to the flow direction. Turbulent flow: When the critical Reynolds number is exceeded, the turbulent flow occurs with large amounts of mixing perpendicular to the flow direction. Turbulence flow is characterised by a high irregular, random, fluctuating motion. Boundary layer flow begins as a smooth laminar flow. As the flow continues, the laminar boundary layer increases in thickness. At some distance the smooth laminar flow breaks down and transitions to a turbulent flow. The distance between the lamniar boundary layer and the turbulent boundary layer is called the transition region. Reference [1] Wikipedia - Boundary layer [2] Schlichting, H. and Gersten, K., 2017. Fundamentals of Boundary–Layer Theory. In Boundary-Layer Theory (pp. 29-49). Springer, Berlin, Heidelberg.]]></content>
+      <categories>
+        <category>曹衣出水</category>
+      </categories>
+      <tags>
+        <tag>Marine Hydrodynamics</tag>
+        <tag>CFD</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Introduction to RANS equations]]></title>
     <url>%2Fblog%2F2018%2F11%2F08%2FRANS-model%2F</url>
     <content type="text"><![CDATA[What is RANS The Reynolds-averaged Navier–Stokes equations (RANS equations) for the three-dimensional incompressible viscous flow consists of the continuity equation and the momentum equations as follows: ∂ui∂xi=0\frac{\partial u_i}{\partial x_i} = 0 ​∂x​i​​​​∂u​i​​​​=0 ρ∂ui∂t+ρuj∂ui∂xj=−∂p∂xi+∂∂xj[μ(∂ui∂xj+∂uj∂xi)]+∂∂xj(−ρui′uj′‾)\rho \frac{\partial u_i}{\partial t} + \rho u_j \frac{\partial u_i}{\partial x_j} = -\frac{\partial p}{\partial x_i} + \frac{\partial}{\partial x_j} \left[ \mu \left(\frac{\partial u_i}{\partial x_j} + \frac{\partial u_j}{\partial x_i} \right) \right] + \frac{\partial}{\partial x_j} (-\rho \overline{u&#x27;_i u&#x27;_j}) ρ​∂t​​∂u​i​​​​+ρu​j​​​∂x​j​​​​∂u​i​​​​=−​∂x​i​​​​∂p​​+​∂x​j​​​​∂​​[μ(​∂x​j​​​​∂u​i​​​​+​∂x​i​​​​∂u​j​​​​)]+​∂x​j​​​​∂​​(−ρ​u​i​′​​u​j​′​​​​​) where uiu_iu​i​​, i=1,2 in two-dimensional flow, denotes the velocity components along x-,y-axis, respectively. ppp is the pressure. rhorhorho is the water density. μ\muμ is the dynamic viscosity of water. −ρui′uj′‾-\rho \overline{u&#x27;_i u&#x27;_j}−ρ​u​i​′​​u​j​′​​​​​ are the Reynolds stresses or the apparent turbulent shear stress. The Reynolds stresses can be solved based on the Boussinesq hypothesis using the eddy viscosity turbulence models: −ρui′uj′‾=μt(∂ui∂xj+∂uj∂xi)−23ρkδij-\rho \overline{u&#x27;_i u&#x27;_j} = \mu_t \left( \frac{\partial u_i}{\partial x_j} + \frac{\partial u_j}{\partial x_i} \right) - \frac{2}{3}\rho k \delta_{ij} −ρ​u​i​′​​u​j​′​​​​​=μ​t​​(​∂x​j​​​​∂u​i​​​​+​∂x​i​​​​∂u​j​​​​)−​3​​2​​ρkδ​ij​​ where μt\mu_tμ​t​​ represents the eddy viscosity. δij\delta_{ij}δ​ij​​ is the Kronecker delta. k=12ui′uj′‾k=\frac{1}{2}\overline{u&#x27;_i u&#x27;_j}k=​2​​1​​​u​i​′​​u​j​′​​​​​ is the turbulent kinetic energy, which can be solved from the transport equations. In the present studies, the SST k−ωk-\omegak−ω model were employed, where ω\omegaω is the specific turbulence dissipation rate. In the near region, the transport equations are changed to the standard k−ωk-\omegak−ω model by setting the damped cross-diffusion derivative term as zero. In the far field, the model is the same as the standard k−ϵk-\epsilonk−ϵ model, which can avoid the problem that the model is too sensitive to the inlet turbulence properties.]]></content>
@@ -8,8 +20,8 @@
         <category>曹衣出水</category>
       </categories>
       <tags>
-        <tag>CFD</tag>
         <tag>Marine Hydrodynamics</tag>
+        <tag>CFD</tag>
       </tags>
   </entry>
   <entry>
@@ -165,8 +177,8 @@
         <category>曹衣出水</category>
       </categories>
       <tags>
-        <tag>Principle of Naval Architecture</tag>
         <tag>Marine Hydrodynamics</tag>
+        <tag>Principle of Naval Architecture</tag>
         <tag>Propulsion</tag>
         <tag>Propeller</tag>
       </tags>
