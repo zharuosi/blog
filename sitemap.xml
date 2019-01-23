@@ -2,65 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zharuosi.github.io/blog/2018/04/06/propeller-concepts/</loc>
+    <loc>https://zharuosi.github.io/blog/2018/09/01/elision-pronunciation/</loc>
     
-    <lastmod>2019-01-22T21:14:59.152Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2018/12/04/Boundary-Layer/</loc>
-    
-    <lastmod>2019-01-22T21:14:59.152Z</lastmod>
+    <lastmod>2019-01-23T21:50:56.054Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zharuosi.github.io/blog/2019/01/08/Partial-Differential-Equations/</loc>
     
-    <lastmod>2019-01-22T21:14:59.152Z</lastmod>
+    <lastmod>2019-01-23T21:50:56.054Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zharuosi.github.io/blog/2018/06/09/machine-learning-5/</loc>
+    <loc>https://zharuosi.github.io/blog/2018/04/06/propeller-concepts/</loc>
     
-    <lastmod>2019-01-22T21:14:59.148Z</lastmod>
+    <lastmod>2019-01-23T21:50:56.054Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/2018/12/04/Boundary-Layer/</loc>
+    
+    <lastmod>2019-01-23T21:50:56.054Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zharuosi.github.io/blog/2018/05/02/machine-learning-4/</loc>
     
-    <lastmod>2019-01-22T21:14:59.148Z</lastmod>
+    <lastmod>2019-01-23T21:50:56.050Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zharuosi.github.io/blog/2018/03/15/machine-learning-3/</loc>
     
-    <lastmod>2019-01-22T21:14:59.148Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2018/06/30/OpenFOAM-CFD/</loc>
-    
-    <lastmod>2019-01-22T21:14:59.148Z</lastmod>
+    <lastmod>2019-01-23T21:50:56.050Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zharuosi.github.io/blog/2018/03/06/machine-learning-2/</loc>
     
-    <lastmod>2019-01-22T21:14:59.148Z</lastmod>
+    <lastmod>2019-01-23T21:50:56.050Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zharuosi.github.io/blog/2018/09/01/elision-pronunciation/</loc>
+    <loc>https://zharuosi.github.io/blog/2018/06/09/machine-learning-5/</loc>
     
-    <lastmod>2019-01-22T21:14:59.148Z</lastmod>
+    <lastmod>2019-01-23T21:50:56.050Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/2018/06/30/OpenFOAM-CFD/</loc>
+    
+    <lastmod>2019-01-23T21:50:56.046Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/2018/10/18/ConvertEPS/</loc>
+    
+    <lastmod>2019-01-23T21:08:52.764Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/about/index.html</loc>
+    
+    <lastmod>2019-01-23T20:59:46.916Z</lastmod>
     
   </url>
   
@@ -68,13 +82,6 @@
     <loc>https://zharuosi.github.io/blog/2018/11/08/RANS-model/</loc>
     
     <lastmod>2019-01-15T02:31:00.458Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/about/index.html</loc>
-    
-    <lastmod>2019-01-08T20:32:28.340Z</lastmod>
     
   </url>
   
@@ -96,13 +103,6 @@
     <loc>https://zharuosi.github.io/blog/2018/05/12/CV-Enterprise/</loc>
     
     <lastmod>2018-12-04T19:28:42.183Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2018/10/18/ConvertEPS/</loc>
-    
-    <lastmod>2018-12-04T19:28:31.383Z</lastmod>
     
   </url>
   
@@ -156,13 +156,6 @@
   </url>
   
   <url>
-    <loc>https://zharuosi.github.io/blog/2018/02/01/hello-world/</loc>
-    
-    <lastmod>2018-12-03T18:36:02.846Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zharuosi.github.io/blog/2018/02/28/machine-learning-1/</loc>
     
     <lastmod>2018-12-03T18:36:02.846Z</lastmod>
@@ -171,6 +164,13 @@
   
   <url>
     <loc>https://zharuosi.github.io/blog/2018/06/07/introduction-to-premiere/</loc>
+    
+    <lastmod>2018-12-03T18:36:02.846Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/2018/02/01/hello-world/</loc>
     
     <lastmod>2018-12-03T18:36:02.846Z</lastmod>
     
