@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zharuosi.github.io/blog/2018/09/01/elision-pronunciation/</loc>
+    
+    <lastmod>2019-03-19T02:07:53.189Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zharuosi.github.io/blog/2018/12/04/Boundary-Layer/</loc>
     
     <lastmod>2019-03-14T20:34:53.842Z</lastmod>
@@ -30,21 +37,14 @@
   </url>
   
   <url>
-    <loc>https://zharuosi.github.io/blog/2018/05/02/machine-learning-4/</loc>
-    
-    <lastmod>2019-03-14T20:34:53.838Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2018/09/01/elision-pronunciation/</loc>
-    
-    <lastmod>2019-03-14T20:34:53.838Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zharuosi.github.io/blog/2018/03/15/machine-learning-3/</loc>
+    
+    <lastmod>2019-03-14T20:34:53.838Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/2018/05/02/machine-learning-4/</loc>
     
     <lastmod>2019-03-14T20:34:53.838Z</lastmod>
     
