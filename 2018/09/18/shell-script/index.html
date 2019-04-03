@@ -126,7 +126,7 @@
 <meta property="og:site_name" content="Of Course I Still Love You">
 <meta property="og:description" content="Introduction Shell scripting makes life more comfortable. The command sequences of Linux can be comblined in one shell script and be executed automatively without wasting any time. For example, if yo">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-04T19:28:52.919Z">
+<meta property="og:updated_time" content="2019-04-03T17:49:45.690Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Writing shell scripts">
 <meta name="twitter:description" content="Introduction Shell scripting makes life more comfortable. The command sequences of Linux can be comblined in one shell script and be executed automatively without wasting any time. For example, if yo">
@@ -641,6 +641,21 @@ done
 ./yourname.sh
 </code></pre>
 <p>Enjoy it.</p>
+<h2 id="advanced-shell-script"><a class="markdownIt-Anchor" href="#advanced-shell-script"></a> Advanced Shell Script</h2>
+<h3 id="remove-all-filesdirectories-except-for-one-file"><a class="markdownIt-Anchor" href="#remove-all-filesdirectories-except-for-one-file"></a> Remove all files/directories except for one file</h3>
+<ul>
+<li>
+<p>rm files except ‘file.txt’</p>
+<p>find . ! -name ‘file.txt’ -type f -exec rm -f {} +</p>
+</li>
+<li>
+<p>rm files except ‘file.txt’</p>
+<p>find . ! -name ‘file.txt’ -type d -exec rm -rf {} +</p>
+</li>
+</ul>
+<p>In zsh, you must enable extendedglob</p>
+<pre><code>setopt extendedglob &amp;&amp; rm -- ^file.txt
+</code></pre>
 
       
     </div>
@@ -844,7 +859,7 @@ done
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell-scripting-basics"><span class="nav-number">2.</span> <span class="nav-text"> Shell Scripting Basics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#file-handling-primer"><span class="nav-number">3.</span> <span class="nav-text"> File Handling Primer</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#example-1-delete-replace-grep"><span class="nav-number">3.1.</span> <span class="nav-text"> Example 1: delete, replace, grep…</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#example-2-array-loop"><span class="nav-number">3.2.</span> <span class="nav-text"> Example 2: array, loop…</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#run-a-shell-script"><span class="nav-number">4.</span> <span class="nav-text"> Run a Shell Script</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell-scripting-basics"><span class="nav-number">2.</span> <span class="nav-text"> Shell Scripting Basics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#file-handling-primer"><span class="nav-number">3.</span> <span class="nav-text"> File Handling Primer</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#example-1-delete-replace-grep"><span class="nav-number">3.1.</span> <span class="nav-text"> Example 1: delete, replace, grep…</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#example-2-array-loop"><span class="nav-number">3.2.</span> <span class="nav-text"> Example 2: array, loop…</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#run-a-shell-script"><span class="nav-number">4.</span> <span class="nav-text"> Run a Shell Script</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#advanced-shell-script"><span class="nav-number">5.</span> <span class="nav-text"> Advanced Shell Script</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#remove-all-filesdirectories-except-for-one-file"><span class="nav-number">5.1.</span> <span class="nav-text"> Remove all files/directories except for one file</span></a></li></ol></li></ol></div>
             
 
           </div>
