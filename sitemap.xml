@@ -2,86 +2,93 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zharuosi.github.io/blog/2018/11/08/RANS-model/</loc>
+    <loc>https://zharuosi.github.io/blog/2019/06/17/logbook/</loc>
     
-    <lastmod>2019-06-01T02:23:02.893Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2019/03/19/Bernoulli/</loc>
-    
-    <lastmod>2019-05-30T01:06:03.810Z</lastmod>
+    <lastmod>2019-06-17T18:58:50.155Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zharuosi.github.io/blog/2018/09/18/shell-script/</loc>
     
-    <lastmod>2019-05-30T01:06:03.810Z</lastmod>
+    <lastmod>2019-06-17T18:58:50.155Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zharuosi.github.io/blog/2018/12/04/Boundary-Layer/</loc>
+    <loc>https://zharuosi.github.io/blog/2018/11/08/RANS-model/</loc>
     
-    <lastmod>2019-05-30T01:06:03.810Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2019/01/08/Partial-Differential-Equations/</loc>
-    
-    <lastmod>2019-05-30T01:06:03.810Z</lastmod>
+    <lastmod>2019-06-17T18:58:50.155Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zharuosi.github.io/blog/2018/03/15/machine-learning-3/</loc>
+    <loc>https://zharuosi.github.io/blog/2019/03/19/Bernoulli/</loc>
     
-    <lastmod>2019-05-30T01:06:03.806Z</lastmod>
+    <lastmod>2019-06-17T18:58:50.151Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zharuosi.github.io/blog/2018/04/06/propeller-concepts/</loc>
     
-    <lastmod>2019-05-30T01:06:03.806Z</lastmod>
+    <lastmod>2019-06-17T18:58:50.151Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zharuosi.github.io/blog/2018/05/02/machine-learning-4/</loc>
+    <loc>https://zharuosi.github.io/blog/2018/12/04/Boundary-Layer/</loc>
     
-    <lastmod>2019-05-30T01:06:03.806Z</lastmod>
+    <lastmod>2019-06-17T18:58:50.151Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/2019/01/08/Partial-Differential-Equations/</loc>
+    
+    <lastmod>2019-06-17T18:58:50.151Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zharuosi.github.io/blog/2018/09/01/elision-pronunciation/</loc>
     
-    <lastmod>2019-05-30T01:06:03.806Z</lastmod>
+    <lastmod>2019-06-17T18:58:50.151Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zharuosi.github.io/blog/2018/03/06/machine-learning-2/</loc>
+    <loc>https://zharuosi.github.io/blog/2018/05/02/machine-learning-4/</loc>
     
-    <lastmod>2019-05-30T01:06:03.806Z</lastmod>
+    <lastmod>2019-06-17T18:58:50.151Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/2018/03/15/machine-learning-3/</loc>
+    
+    <lastmod>2019-06-17T18:58:50.151Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zharuosi.github.io/blog/2018/06/09/machine-learning-5/</loc>
     
-    <lastmod>2019-05-30T01:06:03.802Z</lastmod>
+    <lastmod>2019-06-17T18:58:50.147Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zharuosi.github.io/blog/2018/03/06/machine-learning-2/</loc>
+    
+    <lastmod>2019-06-17T18:58:50.147Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://zharuosi.github.io/blog/2018/06/30/OpenFOAM-CFD/</loc>
     
-    <lastmod>2019-05-30T01:06:03.802Z</lastmod>
+    <lastmod>2019-06-17T18:58:50.143Z</lastmod>
     
   </url>
   
@@ -142,14 +149,14 @@
   </url>
   
   <url>
-    <loc>https://zharuosi.github.io/blog/categories/index.html</loc>
+    <loc>https://zharuosi.github.io/blog/googleb08badbce99a1c79.html</loc>
     
     <lastmod>2018-12-03T18:36:02.886Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zharuosi.github.io/blog/googleb08badbce99a1c79.html</loc>
+    <loc>https://zharuosi.github.io/blog/categories/index.html</loc>
     
     <lastmod>2018-12-03T18:36:02.886Z</lastmod>
     
@@ -170,6 +177,13 @@
   </url>
   
   <url>
+    <loc>https://zharuosi.github.io/blog/2018/06/07/introduction-to-premiere/</loc>
+    
+    <lastmod>2018-12-03T18:36:02.846Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zharuosi.github.io/blog/2018/02/01/hello-world/</loc>
     
     <lastmod>2018-12-03T18:36:02.846Z</lastmod>
@@ -178,13 +192,6 @@
   
   <url>
     <loc>https://zharuosi.github.io/blog/2018/02/28/machine-learning-1/</loc>
-    
-    <lastmod>2018-12-03T18:36:02.846Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/2018/06/07/introduction-to-premiere/</loc>
     
     <lastmod>2018-12-03T18:36:02.846Z</lastmod>
     

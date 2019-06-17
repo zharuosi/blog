@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Logbook]]></title>
+    <url>%2Fblog%2F2019%2F06%2F17%2Flogbook%2F</url>
+    <content type="text"><![CDATA[/* 2019.06.17 工作日志 */ 上午 下午 晚上 Project NACA: review 3D outlet B.C. Project NACA and MPS cases Project NACA 何必等明天，从今天开始坚持写工作日志。立个flag看能不能写满一个月。中文为主，尽最大可能集中到内容上，保持简单。 准备两篇journal来结束2D的MPS工作。 每天一句话充实自己内心。]]></content>
+      <categories>
+        <category>旅程</category>
+      </categories>
+      <tags>
+        <tag>Seed</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Introduction to Bernoulli's principle]]></title>
     <url>%2Fblog%2F2019%2F03%2F19%2FBernoulli%2F</url>
     <content type="text"><![CDATA[Introduction Within a fluid flowing horizontally, the highest speed occurs where the pressure is lowest, and the lowest speed occurs where the pressure is highest. Why? In fluid mechanics, Bernoulli’s principle states that, in a steady flow, the sum of all forms of energy in a fluid () along a streamline remains constant. The forms of energy involves the kinetic energy, the potential energy and the internal energy. Bernoulli’s principle can also be derived directly from Newton’s Second Law of Motion. kinetic energy: dynamic pressure (0.5ρU20.5\rho U^20.5ρU​2​​) potential energy: static pressure, including the gravitational potential internal energy: heat The principle is named after Daniel Bernoulli who published it in his book Hydrodynamica in 1738. Leonhard Euler derived Bernoulli’s equation in its usual form in 1752. The principle is only applicable for isentropic flows: when the effects of irreversible processes (like turbulence) and non-adiabatic processes (e.g. heat radiation) are small and can be neglected. Pressure classification Static pressure Dynamic pressure Total pressure static pressure + dynamic pressure = total pressure p0=p+12ρU2p_0 = p + \frac{1}{2}\rho U^2 p​0​​=p+​2​​1​​ρU​2​​ Hydrostaic pressure (gravitational potential) ps=ρghp_s = \rho gh p​s​​=ρgh Bernoulli’s equation]]></content>
