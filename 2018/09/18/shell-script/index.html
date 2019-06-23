@@ -126,7 +126,7 @@
 <meta property="og:site_name" content="Of Course I Still Love You">
 <meta property="og:description" content="Introduction Shell scripting makes life more comfortable. The command sequences of Linux can be comblined in one shell script and be executed automatively without wasting any time. For example, if yo">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-17T18:58:50.155Z">
+<meta property="og:updated_time" content="2019-06-23T01:58:52.494Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Writing shell scripts">
 <meta name="twitter:description" content="Introduction Shell scripting makes life more comfortable. The command sequences of Linux can be comblined in one shell script and be executed automatively without wasting any time. For example, if yo">
@@ -581,7 +581,8 @@ for allangle in $sub_directory
   # arrange the node and cores of skipper 
 
   # $[] means arithmetic computation: index%5 loop
-  # ${#node_number[@] returns the element number of array
+  # ${node_number[@]} returns the element of array
+  # ${#node_number[@]} returns the element number of array
 
   i=$[index%${#node_number[@]}]
 
