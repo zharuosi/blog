@@ -9,7 +9,7 @@ tags: [Principle of Naval Architecture,Marine Hydrodynamics,Propulsion,Propeller
 
 <img src="https://raw.githubusercontent.com/zharuosi/blog/source/source/images/propeller-screw-icons-vector-16504568.jpg" width="50%" height="50%">
 
-A propeller is a part of propulsion system that transmits power by converting rotational motion into thrust, based on Bernoulli's principle. The most common propeller is called the screw propeller, with fixed helical blades rotating around a shaft. The first screw propeller in the world was invented in 1835, by John Ericsson and Francis Pettit Smith. Propellers can be used in marine ships, aircrafts, etc. The basic concepts and priciples in marine propulsion are introduced in this blog.
+A propeller in propulsion system can transmit power by converting rotational motion into thrust, based on Bernoulli's principle. The most common propeller is called the screw propeller, with fixed helical blades rotating around a shaft. The first screw propeller in the world was invented in 1835, by John Ericsson and Francis Pettit Smith. Propellers can be used in marine ships, aircrafts, etc. The basic concepts and priciples in marine propulsion are introduced in this blog.
 
 ## Geometry
 <!-- more -->
@@ -21,7 +21,7 @@ A propeller is a part of propulsion system that transmits power by converting ro
 Here are basic nomenclatures to describe a blade section:
 <img src="http://pubs.sciepub.com/ajme/1/2/3/image/fig1.png" width="75%" height="75%">
 
-- Leading edge: the point at the front of the airfoil that has maximum curvature.
+- Leading edge: the point at the front of the airfoil that has the maximum curvature.
 - Trailing edge: the point of maximum curvature at the rear of the airfoil.
 - Meanline (camber): half distance along a section between the upper and lower surfaces. Quite  often the meanline distribution is tabulated forms such as a NACA a=0.8 meanline, where a=0.8 means the meanline can create constant lift of 80% of the chord, then the lift drops linearly to zero at 100%.
 - Chord (c): the nose-tail line, connecting the leading edge and trailing edge.
@@ -55,15 +55,15 @@ Note that top pressure on the blade section is lower than the bottom pressure. T
 $$ P_T = T V_A $$
 - Effective power:
 $$ P_E = R V $$
-- Wake: In general the water around the stern has acquired a forward motion in the same direction as the ship. This forward-moving water is called wake. The difference between the ship speed V and the speed of advance is the wake speed. The wake fraction is defined as:
+- **Wake**: In general the water around the stern has acquired a forward motion in the same direction as the ship. This forward-moving water is called wake. The difference between the ship speed V and the speed of advance is the wake speed. The wake fraction is defined as:
 $$ w = \frac{V-V_A}{V} $$
 - Wake is due to three principal causes:
     1. The frictional drag of the hull causes a following current towards the stern.
     2. The streamline flow past the hull causes an increased pressure around the stern. In this region the relative velocity of the water past the hull will be less than the ship's speed.
     3. The ship forms a wave pattern on the surface of the water, and the water particles in the crests have a forward velocity due to the orbital motion, while in the troughs the orbital velocity is sternward. This wake will be positive or negative according to whether there is a crest or a trough of the wave in the vicinity of the propeller.
-- Thrust deduction: The propeller close to the hull can induce a low pressure on the hull which increases its drag. The trust must be higher to overcome the additional drag. The thrust deduction coefficient is defined as:
+- **Thrust deduction**: The propeller close to the hull can induce a low pressure on the hull which increases its drag. The trust must be higher to overcome **the additional drag**. The thrust deduction coefficient is defined as:
 $$ t = \frac{T-R}{R} $$
-where R is the tptal ship resistance and T is the propeller thrust.
+where R is the total ship resistance and T is the propeller thrust.
 
 Here are the non-dimensional characterization of the propeller performance.
 - Advance coefficient:
@@ -76,7 +76,8 @@ $$ K_Q = Q/(\rho n^2D^5) $$
 $$ \eta_0 = \frac{T V_A}{2\pi nQ} $$
 - Propulsive efficiency:
 $$ \eta_t = \frac{R V}{2\pi nQ} \approx \frac{1-t}{1-w} \eta_0$$
-Because of the wake, the propulsive efficiency for a propeller can be greater than 1.0. It means the propeller reduced the ship resistance by taking advantage of its wake.
+
+Because of the wake, the propulsive efficiency for a propeller can be greater than 1.0. It means the propeller can reduce the ship resistance by taking advantage of its wake.
 
 <img src="https://quantapublication.files.wordpress.com/2011/04/3.jpg" width="50%" height="50%">
 
@@ -89,6 +90,9 @@ $$\sigma_{ND} = \frac{P - P_{vap}}{\rho N^2 D^2} $$
 Cavitation causes a great deal of noise, damage to components, vibrations, and a loss of efficiency. The pitting caused by the collapse of cavities produces great wear on components. Highly localized collapses of cavities can erode metals over time.
 
 <img src="https://teamuvdotorg1.files.wordpress.com/2014/10/cavitation.jpg" width="85%" height="85%">
+
+<img src="https://thumbs.gfycat.com/ImperturbableBlaringBettong-size_restricted.gif" width="85%" height="85%">
+
 
 ## Reference
 [1] [Wikipedia - Propeller](https://en.wikipedia.org/wiki/Propeller)

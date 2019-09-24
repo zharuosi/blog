@@ -7,7 +7,7 @@ tags: Linux
 
 ## Introduction
 
-.eps is a common used format of images in academic writting by $LaTex$. If you want to convert hundreds of .jpg or .png. formats to .eps, the command *convert* in Linux system provides a good solution.
+.eps is a common used format of images in academic writting. If you want to convert hundreds of .jpg or .png. formats to .eps, the command *convert* in Linux system provides a good solution.
 
 ## ImageMagick
 <!-- more -->

@@ -88,7 +88,7 @@ The values $\phi$ stored in cell centres $C$ are used to interpolate the values 
 $$ \phi_f = f_x \phi_P + (1-f_x)\phi_N $$
 where $f_x$ is a linear coefficient computed by:
 $$ f_x = \frac{||\vec{fN}||}{||\vec{PN}||} $$
-Let's take the central differencing scheme (CDS) as an example. The cell face values for a uniform grid can be computed by linear interpolation as:
+Let's take the central differencing scheme (CDS) as an example. The cell face values for a uniform grid are computed by linear interpolation as:
 $$ \phi_e = 0.5 (\phi_P + \phi_E) $$
 $$ \phi_w = 0.5 (\phi_W + \phi_P) $$
 The Taylor series truncation error of the central differencing scheme is second order accurate if $P_e<2$. $P_e$ is the Péclet number, the ratio of the rate of advection to the rate of diffusion driven by an appropriate gradient.

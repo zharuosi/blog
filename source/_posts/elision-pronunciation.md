@@ -8,7 +8,7 @@ tags: English skills
 
 ## 引言
 
-一个简单的例子，大家知道fifth的怎么读吗？(美音)不是/ˈfɪfθ/，而是/ˈfɪθ/。第一次知道的时候是不是很震惊呢，也难怪我曾经发/ˈfɪfθ/的时候老外似乎都是？？？的表情。那么什么是elision呢？来看Wikipedia上的解释：
+来看一个简单的例子，fifth怎么发音的？(美音)不是/ˈfɪfθ/，而是/ˈfɪθ/。那么什么是elision呢？来看维基百科上的解释：
 
     In linguistics, an elision or deletion is the omission of one or more sounds (such as a vowel, a consonant,
     or a whole syllable) in a word or phrase.The word elision is frequently used in linguistic description
@@ -97,7 +97,7 @@ tags: English skills
 
 - anchor
 - archeology: /ɑrki'ɑlədʒi/ : the branch of anthropology that studies prehistoric people and their cultures
-- architect: **/'ɑrkɪtɛkt/** :  An architect is a person who designs buildings
+- architect: **/'ɑrkɪtɛkt/** :  an architect is a person who designs buildings
 - archive: **/'a:kaivz/** : collection of records especially about an institution (An institution is a large important organization such as a university, church, or bank.)
 - chaos
 - characteristic
@@ -162,15 +162,67 @@ tags: English skills
 - bristle: /'brɪsl/ : a stiff hair; rise up as in fear
 - bustle: /'bʌsl/ : a rapid active commotion; move or cause to move energetically or busily; in a hurried way
 - castle: **/'kæsl/** : a large and stately mansion; a large building formerly occupied by a ruler and fortified against attack
+- fasten: **/'fæsən/** : to fix firmly, to attach especially by pinning, tying, or nailing
+- glisten: /'ɡlɪsn/ : give off a sparkling. If something glistens, it shines, usually because it is wet or oily.
+- hustle: /'hʌsl/ :  to crowd or push roughly, forcibly or hurriedly, to urge forward **precipitately **
+    - precipitate: to throw violently
+- jostle: /'dʒɑsl/ :  to come in contact or into collision; to force by pushing
+- moisten: /'mɔɪsn/ : make sth moist which means slightly or moderately wet
+- mortgage: /'mɔrɡɪdʒ/ : a lien against property as for securing a loan, e.g. housing mortgage
+- nestle: /'nɛsl/ : 雀巢 to settle snugly or comfortably; to lie in an inconspicuous or sheltered manner
+    - conspicuous: obvious to the eye or mind; attracting attention
+- rustle: /'rʌsl/ : to act or move with energy or speed, a rustling sound: 沙沙声
+- soften: /'sɔfn/
+- thistle: /'θɪsl/ : a wild plant which has leaves with sharp points and purple flowers. 蓟
+- trestle: /'trɛsl/ : a braced frame of timbers, piles, or steelwork serving as a support
+- wrestle: /'rɛsl/ : to engage in deep thought, consideration, or debate, as if in a violent or determined struggle. e.g. wrestle with a difficult problem. Origional meaning: a kind of sport
+
+### Silent U
+
+- baguette: /bæˈgɛt/ : a type of long, thin loaf of white bread which is traditionally made in France.
+- biscuit: /'bɪskɪt/ : the small round bread leavened with baking-powder or soda
+- circuit: /'sɝkɪt/ : an electrical device that provides a path for electrical current to flow
+- disguise: /dɪs'ɡaɪz/ : the act of concealing the identity of something by modifying its appearance, misrepresenting the true nature of something
+- guess
+- guide
+- guild: /ɡɪld/ : a formal association of people with similar interests; an organization of people who do the same job.
+    - the Writers' Guild of America; the Lawyers' Guild;  the Commerce Guild
+- guile: /ɡaɪl/ : being skilled in deception; crafty; fraud
+- guillotine: /'ɡɪlətin/ : 1. kill by cutting the head off with a device called guillotine; 2.closure imposed on the debate of specific sections of a bill
+- guilt;  guilty
+- guise: /ɡaɪz/ : an artful or simulated semblance, e.g., under the guise of friendship he betrayed them
+- guitar
+- rogue: /roɡ/ : deceitful and unreliable, a rogue is a man who behaves in a dishonest or criminal way, a rogue element is someone or something that behaves differently from others of its kind, often causing damage.
+- silhouette: /,sɪlu'ɛt/ : the outline of an object. e.g. He drew the city in silhouette.
+
 
 ### Silent W
 
 - sword: /sɔrd/
-- 
-
-
-
-
+- awry: /ə'raɪ/ : turned or twisted toward one side, not functioning properly/correctly. Go awry = fail
+- write
+- playwright: /'pleirait / : someone who writes plays
+- wrack: /ræk/ : n, the destruction or collapse of something, ruin. vt/vi, smash or break forcefully.
+- wrangle: /ræŋɡəl/ : to quarrel noisily, angrily or disruptively.
+- wrath: /ræθ/ : n, intense anger on an epic scale. .e.g. wrath of god
+- wreak: /rik/ : vt, to cause a great amount of disorder or damage, e.g., wreak havoc
+- wreath: /riθ/ :  flower arrangement consisting of a circular band of foliage or flowers for ornamental purposes, sometimes lying on the coffin.
+    laurel wreath: 桂冠
+- wreck: /rɛk/ : == wrack. shipwreck is an accident that destroys a ship at sea. A wreck is something such as a ship, car, plane, or building that has been destroyed, usually in an accident. The remains/debris is called wreckage.
+- wrench: /rɛntʃ/ : a hand tool that is used to hold or twist a nut or bolt
+- wrest: /rɛst/ : obtain by seizing forcibly or violently
+- wrestle: /'rɛsl/ : See above.
+- wren: /rɛn/ : kind of a bird
+- wretch: /rɛtʃ/ : poor soul, bad gay, adj: wretched
+- wriggle: /'rɪɡl/ : move in a twisting or contorted motion, especially when struggling
+- wring: /'rɪŋ'/ : a twisting squeeze
+- wrinkle: /'rɪŋkl/ : a slight depression/crumpled/creased in the smoothness of a surface; a clever method of doing something 
+- wrist: /rɪst/ : a joint between your hand and your arm ; elbow: 肘hinge joint between the forearm and upper arm
+- writ: /rɪt/ : (law) a legal document issued by a court or judicial officier that orders a person to do a particular thing.
+- writhe: /raɪð/ : to move in a twisting or contorted motion, especially when struggling. e.g. He was writhing in agony.
+- wrought: /rɔt/ : make sth happen or change. original meaning: shaped to fit (锻造、加工）
+- wrung： /rʌŋ/ : past tense of wring
+- wry: /raɪ/ : distort; bent to one side. If someone has a wry expression, it shows that they find a bad situation or a change in a situation slightly amusing.
 
 ## 需要连读的短语或句子
 

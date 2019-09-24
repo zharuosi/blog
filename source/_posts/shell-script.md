@@ -157,7 +157,8 @@ Here are some examples and templates of the shell scripting to take care of the 
       # arrange the node and cores of skipper 
 
       # $[] means arithmetic computation: index%5 loop
-      # ${#node_number[@] returns the element number of array
+      # ${node_number[@]} returns the element of array
+      # ${#node_number[@]} returns the element number of array
 
       i=$[index%${#node_number[@]}]
 
@@ -221,3 +222,26 @@ Set the execute permission on your script:
     ./yourname.sh
 
 Enjoy it.
+
+
+
+## Advanced Shell Script
+
+### Remove all files/directories except for one file
+
+- rm files except 'file.txt'
+
+    find . ! -name 'file.txt' -type f -exec rm -f {} +
+
+- rm files except 'file.txt'
+
+    find . ! -name 'file.txt' -type d -exec rm -rf {} +
+
+In zsh, you must enable extendedglob
+
+    setopt extendedglob && rm -- ^file.txt
+
+
+
+
+
