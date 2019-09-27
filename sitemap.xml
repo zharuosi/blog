@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zharuosi.github.io/blog/about/index.html</loc>
+    
+    <lastmod>2019-09-27T02:14:37.854Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zharuosi.github.io/blog/2019/06/17/logbook/</loc>
     
-    <lastmod>2019-09-26T01:55:51.832Z</lastmod>
+    <lastmod>2019-09-27T02:14:37.846Z</lastmod>
     
   </url>
   
@@ -17,13 +24,6 @@
   
   <url>
     <loc>https://zharuosi.github.io/blog/2019/09/07/permutation-combination/</loc>
-    
-    <lastmod>2019-09-24T04:51:24.161Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zharuosi.github.io/blog/about/index.html</loc>
     
     <lastmod>2019-09-24T04:51:24.161Z</lastmod>
     
