@@ -118,18 +118,18 @@
 
 
 
-<meta name="description" content="本文介绍如何使用SSH进行远程登录以及设置SSH免密码登录。  SSH简介 首先简单介绍一下什么是SSH(Secure Shell)。 SSH是一个用于计算机间的远程登录会话和其他网络服务的加密网络安全协议，由互联网工程任务组 IETF（Internet Engineering Task Force）的网络工作小組（Network Working Group）所制定。相对于传统的网络服务，如FTP">
+<meta name="description" content="本文介绍如何使用SSH进行远程登录以及设置SSH免密码登录。  SSH简介 SSH(Secure Shell)是一个用于计算机间的远程登录会话和其他网络服务的加密网络安全协议，由互联网工程任务组 IETF（Internet Engineering Task Force）的网络工作小組（Network Working Group）所制定。相对于传统的网络服务，如FTP、 POP等， SSH协议避免了">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SSH login without password">
 <meta property="og:url" content="https://zharuosi.github.io/blog/2018/02/07/ssh-login/index.html">
 <meta property="og:site_name" content="Of Course I Still Love You">
-<meta property="og:description" content="本文介绍如何使用SSH进行远程登录以及设置SSH免密码登录。  SSH简介 首先简单介绍一下什么是SSH(Secure Shell)。 SSH是一个用于计算机间的远程登录会话和其他网络服务的加密网络安全协议，由互联网工程任务组 IETF（Internet Engineering Task Force）的网络工作小組（Network Working Group）所制定。相对于传统的网络服务，如FTP">
+<meta property="og:description" content="本文介绍如何使用SSH进行远程登录以及设置SSH免密码登录。  SSH简介 SSH(Secure Shell)是一个用于计算机间的远程登录会话和其他网络服务的加密网络安全协议，由互联网工程任务组 IETF（Internet Engineering Task Force）的网络工作小組（Network Working Group）所制定。相对于传统的网络服务，如FTP、 POP等， SSH协议避免了">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-12-03T18:36:02.882Z">
+<meta property="og:updated_time" content="2019-09-28T02:03:37.150Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSH login without password">
-<meta name="twitter:description" content="本文介绍如何使用SSH进行远程登录以及设置SSH免密码登录。  SSH简介 首先简单介绍一下什么是SSH(Secure Shell)。 SSH是一个用于计算机间的远程登录会话和其他网络服务的加密网络安全协议，由互联网工程任务组 IETF（Internet Engineering Task Force）的网络工作小組（Network Working Group）所制定。相对于传统的网络服务，如FTP">
+<meta name="twitter:description" content="本文介绍如何使用SSH进行远程登录以及设置SSH免密码登录。  SSH简介 SSH(Secure Shell)是一个用于计算机间的远程登录会话和其他网络服务的加密网络安全协议，由互联网工程任务组 IETF（Internet Engineering Task Force）的网络工作小組（Network Working Group）所制定。相对于传统的网络服务，如FTP、 POP等， SSH协议避免了">
 
 
 
@@ -441,16 +441,14 @@
       
         <p>本文介绍如何使用SSH进行远程登录以及设置SSH免密码登录。</p>
 <h2 id="ssh简介"><a class="markdownIt-Anchor" href="#ssh简介"></a> SSH简介</h2>
-<p>首先简单介绍一下什么是<a href="https://en.wikipedia.org/wiki/Secure_Shell" target="_blank" rel="noopener">SSH(Secure Shell)</a>。</p>
-<p>SSH是一个用于计算机间的远程登录会话和其他网络服务的加密网络安全协议，由互联网工程任务组 IETF（Internet Engineering Task Force）的网络工作小組（Network Working Group）所制定。相对于传统的网络服务，如FTP、 POP等， SSH协议避免了使用明文传输数据，帐号和口令，可以有效防止信息泄漏和中间人攻击，也能够防止DNS欺骗和IP欺骗。其具体工作原理本文不作详述。</p>
+<p><a href="https://en.wikipedia.org/wiki/Secure_Shell" target="_blank" rel="noopener">SSH(Secure Shell)</a>是一个用于计算机间的远程登录会话和其他网络服务的加密网络安全协议，由互联网工程任务组 IETF（Internet Engineering Task Force）的网络工作小組（Network Working Group）所制定。相对于传统的网络服务，如FTP、 POP等， SSH协议避免了使用明文传输数据，帐号和口令，可以有效防止信息泄漏和中间人攻击，也能够防止DNS欺骗和IP欺骗。其具体工作原理本文不作详述。</p>
 <h2 id="使用ssh登录远程主机"><a class="markdownIt-Anchor" href="#使用ssh登录远程主机"></a> 使用SSH登录远程主机</h2>
 <ul>
 <li>首先判断是否安装SSH服务。打开Terminal试试：</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh localhost</span><br></pre></td></tr></table></figure>
  <a id="more"></a> 
-<pre><code>若显示connection refused, 则需要手动安装。
-</code></pre>
+<p>若显示connection refused, 则需要手动安装。</p>
 <ul>
 <li>
 <p>安装SSH服务：</p>
@@ -486,22 +484,19 @@
 <li>开启图形界面：</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -Y user@10.20.120.10</span><br></pre></td></tr></table></figure>
-<pre><code>即可使用远程服务器上的图形界面应用。
-</code></pre>
+<p>即可使用远程服务器上的图形界面应用。</p>
 <p>一般情况下，每次登录必须输入密码。在涉及大量文件传输操作时，频繁输入密码会十分不便。以下介绍如何免密码登录。</p>
 <h2 id="设置ssh免密码登录"><a class="markdownIt-Anchor" href="#设置ssh免密码登录"></a> 设置SSH免密码登录</h2>
 <ul>
 <li>创建公钥</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
-<pre><code>默认设置即可，创建id_rsa（私钥）和id_rsa.pub（公钥）文件。以后再次操作记得先行备份。
-</code></pre>
+<p>默认设置即可，创建id_rsa（私钥）和id_rsa.pub（公钥）文件。以后再次操作记得先行备份。</p>
 <ul>
 <li>上传公钥至服务器</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rsync -avPz ~/.ssh/id_rsa.pub user@server:~/.ssh/</span><br></pre></td></tr></table></figure>
-<pre><code>Note: 如果服务器上无.ssh目录则先创建（mkdir ~/.ssh）
-</code></pre>
+<p>Note: 如果服务器上无.ssh目录则先创建（mkdir ~/.ssh）</p>
 <ul>
 <li>复制公钥至authorized_keys</li>
 </ul>
